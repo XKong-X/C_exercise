@@ -222,3 +222,148 @@
 //	return 0;
 //}
 //
+//int main()
+//{
+//	int ch = 0;
+//	int count_a = 0;
+//	int count_b = 0;
+//	while (((ch = getchar()) != '0') && ch != EOF)
+//	{
+//		if (ch == 'A')
+//		{
+//			count_a++;
+//		}
+//		if (ch == 'B')
+//		{
+//			count_b++;
+//		}
+//	}
+//	if (count_a == count_b)
+//	{
+//		printf("%c\n", 'E');
+//	}
+//	else if (count_a > count_b)
+//	{
+//		printf("%c\n", 'A');
+//	}
+//	else
+//	{
+//		printf("%c\n", 'B');
+//	}
+//	return 0;
+//}
+//
+//int main()
+//{
+//	int ch = 0;
+//	int count = 0;
+//	while (((ch = getchar()) != '0') && ch != EOF)
+//	{
+//		if (ch == 'A')
+//		{
+//			count++;
+//		}
+//		if (ch == 'B')
+//		{
+//			count --;
+//		}
+//	}
+//	if (count == 0)
+//	{
+//		printf("E\n");
+//	}
+//	else if (count > 0)
+//	{
+//		printf("A\n");
+//	}
+//	else
+//	{
+//		printf("B\n");
+//	}
+//	return 0;
+//}
+//
+//int main()
+//{
+//	char str[100] = { 0 };
+//	gets(str);
+//	int i = 0;
+//	int count = 0;
+//	while (str[i] != '0')
+//	{
+//		if (str[i] == 'A')
+//		{
+//			count++;
+//		}
+//		if (str[i] == 'B')
+//		{
+//			count--;
+//		}
+//		i++;
+//	}
+//	if (count == 0)
+//	{
+//		printf("E\n");
+//	}
+//	else if (count > 0)
+//	{
+//		printf("A\n");
+//	}
+//	else
+//	{
+//		printf("B\n");
+//	}
+//	return 0;
+//}
+//
+//int main()
+//{
+//	int n = 0;
+//	while (scanf("%d", &n) != EOF)
+//	{
+//		if (n >= 140)
+//			printf("Genius\n");
+//	}
+//	return 0;
+//}
+//
+//int main()
+//{
+//	int n = 0;
+//	while (~scanf("%d", &n))
+//	{
+//		if (n >= 140)
+//			printf("Genius\n");
+//	}
+//	return 0;
+//}
+//
+//int main()
+//{
+//	int s = 0;
+//	while ((scanf("%d",&s)) != EOF)
+//	{
+//		if (s >= 90 && s <= 100)
+//		{
+//			printf("perfect\n");
+//		}
+//	}
+//	return 0;
+//}
+//
+//int main()
+//{
+//	int s = 0;
+//	while (~scanf("%d",&s))
+//	{
+//		if (s >= 60)
+//		{
+//			printf("Pass\n");
+//		}
+//		else
+//		{
+//			printf("Fall\n");
+//		}
+//	}
+//	return 0;
+//}
