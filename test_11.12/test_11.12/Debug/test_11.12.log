@@ -1,3 +1,2 @@
 ﻿  test.c
-D:\Gitee\C_exericse\test_11.12\test_11.12\test.c(107,16): warning C4477: “scanf”: 格式字符串“%c”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
   test_11.12.vcxproj -> D:\Gitee\C_exericse\test_11.12\Debug\test_11.12.exe
