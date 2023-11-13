@@ -1,3 +1,2 @@
 ﻿  test.c
-D:\Gitee\C_exericse\test_11.13\test_11.13\test.c(17,5): error C2084: 函数“int main()”已有主体
-D:\Gitee\C_exericse\test_11.13\test_11.13\test.c(5): message : 参见“main”的前一个定义
+  test_11.13.vcxproj -> D:\Gitee\C_exericse\test_11.13\Debug\test_11.13.exe
