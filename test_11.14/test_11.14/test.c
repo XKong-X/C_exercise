@@ -193,3 +193,24 @@
 //	printf("%d\n", n);
 //	return 0;
 //}
+//
+////判断一个数是否为2的n次方
+//int num_2(int n)
+//{
+//		if ((n & (n - 1)) == 0)
+//			return 1;
+//		else
+//			return 0;
+//}
+//int main()
+//{
+//	int num = 0;
+//	scanf("%d", &num);
+//	int n = num_2(num);
+//	if (n)
+//		printf("%d是2的n次方\n", num);
+//	else
+//		printf("%d是不2的n次方\n", num);
+//	return 0;
+//}
+//
