@@ -105,42 +105,43 @@
 //	return 0;
 //}
 //
-
-struct man
-{
-	char name[20];
-	char tele[12];
-	char sex[5];
-	int high;
-};
-
-struct st
-{
-	struct man p;
-	int num;
-	float f;
-};
-
-void print1(struct man p)
-{
-	printf("%s %s %s %d\n", p.name, p.tele, p.sex, p.high);//结构体指针->成员变量
-}
-
-void print2(struct man* sp) 
-{
-	printf("%s %s %s %d\n", sp->name, sp->tele, sp->sex, sp->high);//结构体变量.成员变量
-}
-
-int main()
-{
-	struct man p = { "张三","189****3501","男",181};//结构体变量的创建
-	struct st s = { { "李四","189****3502","女",166 },100 ,3.14f};
-
-	printf("%s %s %s %d\n", p.name, p.tele, p.sex, p.high);
-	printf("%s %s %s %d %d %f\n", s.p.name, s.p.tele, s.p.sex, s.p.high, s.num, s.f);
-
-	print1(p);
-	print2(&p);
-
-	return 0;
-}
+////结构体访问及传参
+//struct man
+//{
+//	char name[20];
+//	char tele[12];
+//	char sex[5];
+//	int high;
+//};
+//
+//struct st
+//{
+//	struct man p;
+//	int num;
+//	float f;
+//};
+//
+//void print1(struct man p)
+//{
+//	printf("%s %s %s %d\n", p.name, p.tele, p.sex, p.high);//结构体指针->成员变量
+//}
+//
+//void print2(struct man* sp) 
+//{
+//	printf("%s %s %s %d\n", sp->name, sp->tele, sp->sex, sp->high);//结构体变量.成员变量
+//}
+//
+//int main()
+//{
+//	struct man p = { "张三","189****3501","男",181};//结构体变量的创建
+//	struct st s = { { "李四","189****3502","女",166 },100 ,3.14f};
+//
+//	printf("%s %s %s %d\n", p.name, p.tele, p.sex, p.high);
+//	printf("%s %s %s %d %d %f\n", s.p.name, s.p.tele, s.p.sex, s.p.high, s.num, s.f);
+//
+//	print1(p);
+//	print2(&p);
+//
+//	return 0;
+//}
+//
