@@ -308,3 +308,31 @@
 //    printf("%#o %#X", num, num);
 //    return 0;
 //}
+//
+////XÐÍÍ¼°¸
+//int main()
+//{
+//	int num = 0;
+//	while (~scanf("%d", &num))
+//	{
+//		int i = 0;
+//		int j = 0;
+//		for (i = 0; i < num; i++)
+//		{
+//			for (j = 0; j < num; j++)
+//			{
+//				if (i == j||((i + j) == (num - 1)))
+//				{
+//					printf("*");
+//				}
+//				else
+//				{
+//					printf(" ");
+//				}
+//				
+//			}
+//			printf("\n");
+//		}
+//	}
+//	return 0;
+//}
