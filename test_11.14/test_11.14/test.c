@@ -161,7 +161,7 @@
 //	return count;
 //}
 ////2.
-//int count_num_of_1(unsigned int n)
+//int count_num_of_1(int n)
 //{
 //	int i = 0;
 //	int count = 0;
@@ -175,7 +175,7 @@
 //	return count;
 //}
 ////3.
-//int count_num_of_1(unsigned int n)
+//int count_num_of_1(int n)
 //{
 //	int count = 0;
 //	while (n)
@@ -211,6 +211,43 @@
 //		printf("%d是2的n次方\n", num);
 //	else
 //		printf("%d是不2的n次方\n", num);
+//	return 0;
+//}
+//
+//求两个int(32)位整数和n的二进制表达中，不同位（bit）的个数
+////1.
+//int num_differ(int m, int n)
+//{
+//	int tmp = m ^ n;
+//	int count = 0;
+//	while (tmp)
+//	{
+//		tmp = tmp & (tmp - 1);
+//		count++;
+//	}
+//	return count;
+//}
+////2.
+//int num_differ(int m, int n)
+//{
+//	int i = 0;
+//	int count = 0;
+//	for (i = 0; i < 32; i++)
+//	{
+//		if (((m >> i) & 1) != ((n >> i) & 1))
+//		{
+//			count++;
+//		}
+//	}
+//	return count;
+//}
+//int main()
+//{
+//	int m = 0;
+//	int n = 0;
+//	scanf("%d %d", &m, &n);
+//	int ret = num_differ(m,n);
+//	printf("%d\n", ret);
 //	return 0;
 //}
 //
