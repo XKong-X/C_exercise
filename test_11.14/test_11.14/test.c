@@ -300,3 +300,11 @@
 //    printf("%15d", num);
 //    return 0;
 //}
+//
+////Ëõ¶Ì¶ş½øÖÆ
+//int main()
+//{
+//    int num = 1234;
+//    printf("%#o %#X", num, num);
+//    return 0;
+//}
