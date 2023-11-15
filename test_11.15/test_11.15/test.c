@@ -103,3 +103,35 @@
 //printf("%.2f %.2f %.2f", max, min, sum / n);
 //return 0;
 //}
+//
+////Å£Å£µÄË®±­
+//#include <math.h>
+//int main()
+//{
+//    int h = 0;
+//    int r = 0;
+//    scanf("%d %d", &h, &r);
+//    float pi = 3.14;
+//    float v = (float)pi * h * pow(r, 2) * 1e-3;
+//    int count = 1;
+//    while ((10.0 / count) >= v)
+//    {
+//        count++;
+//    }
+//    printf("%d", count);
+//    return 0;
+//}
+//
+////Å£Å£µÄÇò
+//#include <math.h>
+//int main()
+//{
+//    int r = 0;
+//    scanf("%d", &r);
+//    float pi = 3.14;
+//    float v = (float)(4.0 / 3.0) * pi * pow(r, 3);
+//    printf("%.2f", v);
+//    return 0;
+//}
+//
+//

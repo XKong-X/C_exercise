@@ -1,3 +1,4 @@
 ﻿  test.c
-D:\Gitee\C_exericse\test_11.15\test_11.15\test.c(75,1): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\Gitee\C_exericse\test_11.15\test_11.15\test.c(132,1): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Gitee\C_exericse\test_11.15\test_11.15\test.c(133,1): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
   test_11.15.vcxproj -> D:\Gitee\C_exericse\test_11.15\Debug\test_11.15.exe
