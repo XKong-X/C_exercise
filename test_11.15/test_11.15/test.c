@@ -34,3 +34,13 @@
 //    printf("%d", a + b);
 //    return 0;
 //}
+//
+////浮点数的个位数字
+//int main()
+//{
+//    float n = 0.0;
+//    scanf("%f", &n);
+//    int num = (int)n;
+//    printf("%d", num % 10);
+//    return 0;
+//}
