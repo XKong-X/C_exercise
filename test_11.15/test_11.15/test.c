@@ -76,3 +76,30 @@
 //    printf("%lld", s);
 //    return 0;
 //}
+//
+////Í³¼Æ³É¼¨
+//int main() 
+//{
+//int n = 0;
+//scanf("%d", &n);
+//float s = 0.0;
+//float max = 0.0;
+//float min = 100.0;
+//float sum = 0.0;
+//int i = 0;
+//for (i = 0; i < n; i++)
+//{
+//    scanf("%f", &s);
+//    if (s > max)
+//    {
+//        max = s;
+//    }
+//    if (s < min)
+//    {
+//        min = s;
+//    }
+//    sum += s;
+//}
+//printf("%.2f %.2f %.2f", max, min, sum / n);
+//return 0;
+//}
