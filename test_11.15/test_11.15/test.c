@@ -54,3 +54,25 @@
 //    printf("%d %d", n / m, n % m);
 //    return 0;
 //}
+//
+////时间转换
+//int main()
+//{
+//    int sec = 0;
+//    scanf("%d", &sec);
+//    int h = sec / 3600;
+//    int m = (sec % 3600) / 60;
+//    int s = sec % 60;
+//    printf("%d %d %d", h, m, s);
+//    return 0;
+//}
+//
+////你能活多少秒
+//int main()
+//{
+//    int age = 0;
+//    scanf("%d", &age);
+//    long long s = (long long)age * 3.156e7;
+//    printf("%lld", s);
+//    return 0;
+//}
