@@ -44,3 +44,13 @@
 //    printf("%d", num % 10);
 //    return 0;
 //}
+// 
+////¼ÆËã´øÓà³ı·¨
+//int main()
+//{
+//    int n = 0;
+//    int m = 0;
+//    scanf("%d %d", &n, &m);
+//    printf("%d %d", n / m, n % m);
+//    return 0;
+//}
