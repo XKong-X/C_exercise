@@ -174,3 +174,31 @@
 //    }
 //    return 0;
 //}
+//
+////Å£Å£µÄ½ð±Ò
+//int main()
+//{
+//    int x = 0;
+//    int y = 0;
+//    int x1 = 0;
+//    int y1 = 0;
+//    scanf("%d %d", &x, &y);
+//    scanf("%d %d", &x1, &y1);
+//    if ((y1 - y) > 0)
+//    {
+//        printf("u\n");
+//    }
+//    else if ((y1 - y) < 0)
+//    {
+//        printf("d\n");
+//    }
+//    if ((x1 - x) > 0)
+//    {
+//        printf("r\n");
+//    }
+//    else if ((x1 - x) < 0)
+//    {
+//        printf("l\n");
+//    }
+//    return 0;
+//}
