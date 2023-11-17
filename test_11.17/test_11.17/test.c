@@ -57,3 +57,20 @@
 //    }
 //    return 0;
 //}
+//
+////牛牛的二三七整除
+//int main()
+//{
+//    int n = 0;
+//    scanf("%d", &n);
+//    int arr[3] = { 2,3,7 };
+//    int i = 0;
+//    for (i = 0; i < 3; i++)
+//    {
+//        if (n % arr[i] == 0)
+//            printf("%d ", arr[i]);
+//    }
+//    if (n % 2 != 0 && n % 3 != 0 && n % 7 != 0)
+//        printf("n\n");
+//    return 0;
+//}
