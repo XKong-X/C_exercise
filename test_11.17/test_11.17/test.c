@@ -74,3 +74,28 @@
 //        printf("n\n");
 //    return 0;
 //}
+//
+////统计数据正负个数
+//int main()
+//{
+//	int i = 0;
+//	int count1 = 0;
+//	int count2 = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		int n = 0;
+//		scanf("%d", &n);
+//		if (n >= 0)
+//		{
+//			count1++;
+//		}
+//		else
+//		{
+//			count2++;
+//		}
+//	}
+//	printf("positive:%d\nnegative:%d", count1, count2);
+//	return 0;
+//}
+//
+//
