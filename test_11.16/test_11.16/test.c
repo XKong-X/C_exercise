@@ -70,3 +70,30 @@
 //    printf("%lld\n", (long long)gcd + lcm);
 //    return 0;
 //}
+//
+////Ğ¡ÀÖÀÖ¸ÄÊı×Ö
+//#include <math.h>
+//int main()
+//{
+//    int n = 0;
+//    scanf("%d", &n);
+//    int i = 0;
+//    int sum = 0;
+//    for (i = 0; i < 9; i++)
+//    {
+//        int ret = n % 10;
+//
+//        if (ret % 2 == 0)
+//        {
+//            ret = 0;
+//        }
+//        else
+//        {
+//            ret = 1;
+//        }
+//        sum += ret * pow(10,i);
+//        n /= 10;
+//    }
+//    printf("%d", sum);
+//    return 0;
+//}
