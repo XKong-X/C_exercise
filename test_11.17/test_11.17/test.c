@@ -41,3 +41,19 @@
 //        printf("Abnormal\n");
 //    return 0;
 //}
+//
+////判断是不是字母(用库函数isalpha)
+//#include <ctype.h>
+//int main()
+//{
+//    char ch = 0;
+//    while ((ch = getchar()) != EOF)
+//    {
+//        if (isalpha(ch))
+//            printf("%c is an alphabet.\n", ch);
+//        else
+//            printf("%c is not an alphabet.\n", ch);
+//        getchar();//清除缓存区的'\0'
+//    }
+//    return 0;
+//}
