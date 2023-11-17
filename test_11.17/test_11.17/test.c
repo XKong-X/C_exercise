@@ -290,4 +290,46 @@
 //    return 0;
 //}
 //
-//
+////ţţ�ļƻ�
+//int main()
+//{
+//    int y = 0;
+//    int m = 0;
+//    int d = 0;
+//    scanf("%d %d %d", &y, &m, &d);
+//    int y1 = 0;
+//    int m1 = 0;
+//    int d1 = 0;
+//    scanf("%d %d %d", &y1, &m1, &d1);
+//    if (y1 > y)
+//    {
+//        printf("yes\n");
+//    }
+//    else if (y1 == y)
+//    {
+//        if (m1 > m)
+//        {
+//            printf("yes\n");
+//        }
+//        else if (m1 == m)
+//        {
+//            if (d1 >= d)
+//            {
+//                printf("yes\n");
+//            }
+//            else
+//            {
+//                printf("no\n");
+//            }
+//        }
+//        else
+//        {
+//            printf("no\n");
+//        }
+//    }
+//    else
+//    {
+//        printf("no\n");
+//    }
+//    return 0;
+//}
