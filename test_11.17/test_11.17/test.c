@@ -333,3 +333,43 @@
 //    }
 //    return 0;
 //}
+//
+////计算一元二次方程
+//#include <math.h>
+//int main()
+//{
+//    double a = 0;
+//    double b = 0;
+//    double c = 0;
+//    while (~scanf("%lf %lf %lf", &a, &b, &c))
+//    {
+//        double delta = pow(b, 2) - 4 * a * c;
+//        if (a == 0)
+//        {
+//            printf("Not quadratic equation\n");
+//        }
+//        else
+//        {
+//            if (delta > 0)
+//            {
+//                printf("x1=%.2lf;x2=%.2lf\n", (-b - sqrt(delta)) / (2 * a), (-b + sqrt(delta)) / (2 * a));
+//            }
+//            else if (delta < 0)
+//            {
+//                printf("x1=%.2lf%.2lfi;x2=%.2lf%+.2lfi\n", -b / (2 * a), -sqrt(-delta) / (2 * a), -b / (2 * a), sqrt(-delta) / (2 * a));
+//            }
+//            else
+//            {
+//                if (b / (2 * a) == 0)
+//                {
+//                    printf("x1=x2=0.00\n");
+//                }
+//                else
+//                {
+//                    printf("x1=x2=%.2lf\n", -b / (2 * a));
+//                }
+//            }
+//        }
+//    }
+//    return 0;
+//}
