@@ -27,3 +27,17 @@
 //    }
 //    return 0;
 //}
+//
+////½¡¿µÆÀ¹À
+//#include <math.h>
+//int main()
+//{
+//    double w = 0.0;
+//    double h = 0.0;
+//    scanf("%lf %lf", &w, &h);
+//    if ((w / pow(h, 2) >= 18.5) && (w / pow(h, 2) <= 23.9))
+//        printf("Normal\n");
+//    else
+//        printf("Abnormal\n");
+//    return 0;
+//}
