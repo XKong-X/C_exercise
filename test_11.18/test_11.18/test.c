@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 
-#include <assert.h>
 ////库函数（strcpy）的代码实现及优化
 //void my_strcpy(char*dest,char*src)
 //{
@@ -23,6 +22,7 @@
 //		;
 //	}
 //}
+//#include <assert.h>
 //int main()
 //{
 //	char arr1[20] = "xxxxxxxxxxxxx";
@@ -53,4 +53,20 @@
 //	return 0;
 //}
 //
-//
+////库函数（strlen）代码优化
+//#include <assert.h>
+//int my_strlen(const char* str)
+//{
+//	assert(str);
+//	int count = 0;
+//	while (*str++ != '\0')
+//		count++;
+//	return count;
+//}
+//int main()
+//{
+//	char arr[] = "hello bit";
+//	int len = my_strlen(arr);
+//	printf("%d\n", len);
+//	return 0;
+//}
