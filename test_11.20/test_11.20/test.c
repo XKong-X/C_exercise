@@ -47,3 +47,41 @@
 //    }
 //        return 0;
 //}
+//
+////¼òµ¥¼ÆËãÆ÷
+//int main()
+//{
+//    double n1 = 0.0;
+//    char ch = 0;
+//    double n2 = 0.0;
+//    scanf("%lf%c%lf", &n1, &ch, &n2);
+//    if (ch != '+' && ch != '-' && ch != '*' && ch != '/')
+//    {
+//        printf("Invalid operation!\n");
+//    }
+//    else if (ch == '/' && n2 == 0.0)
+//    {
+//        printf("Wrong!Division by zero!\n");
+//    }
+//    else
+//    {
+//        double sum = 0.0;
+//        switch (ch)
+//        {
+//        case '+':
+//            sum = n1 + n2;
+//            break;
+//        case '-':
+//            sum = n1 - n2;
+//            break;
+//        case '*':
+//            sum = n1 * n2;
+//            break;
+//        case '/':
+//            sum = n1 / n2;
+//            break;
+//        }
+//        printf("%.4lf%c%.4lf=%.4lf", n1, ch, n2, sum);
+//    }
+//    return 0;
+//}
