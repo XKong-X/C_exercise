@@ -84,3 +84,21 @@
 //	printf("%s\n", arr);
 //	return 0;
 //}
+//
+////求一个数的前n项之和（a+aa+aa+aaa...）
+//int main()
+//{
+//	int a = 0;
+//	int n = 0;
+//	scanf("%d %d", &a, &n);
+//	int sum = 0;
+//	int i = 0;
+//	int k = 0;
+//	for (i = 0; i < 5; i++)
+//	{
+//		k = k * 10 + a;
+//		sum += k;
+//	}
+//	printf("%d\n", sum);
+//	return 0;
+//}
