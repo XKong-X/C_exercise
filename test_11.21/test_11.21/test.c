@@ -27,3 +27,28 @@
 //    printf("%lld", sum);
 //    return 0;
 //}
+//
+////KiKi求质数个数
+//int main()
+//{
+//    //int flag = 1;
+//    int count = 0;
+//    for (int i = 101; i < 999; i += 2)
+//    {
+//        int flag = 1;
+//        for (int j = 3; j < i; j+=2)
+//        {
+//            if (i % j == 0)
+//            {
+//                flag = 0;
+//                break;
+//            }
+//        }
+//        if (flag)
+//        {
+//            count++;
+//        }
+//    }
+//    printf("%d\n", count);
+//    return 0;
+//}
