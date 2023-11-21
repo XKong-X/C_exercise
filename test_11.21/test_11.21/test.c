@@ -66,4 +66,21 @@
 //	return 0;
 //}
 //
-//
+////×Ö·ûÄæĞò
+//#include <string.h>
+//int main()
+//{
+//	char arr[10001] = { 0 };
+//	gets(arr);
+//	int l = 0;
+//	int r = strlen(arr) - 1;
+//	while (l < r)
+//	{
+//		char tmp = arr[l];
+//		arr[l] = arr[r];
+//		arr[r] = tmp;
+//		l++; r--;
+//	}
+//	printf("%s\n", arr);
+//	return 0;
+//}
