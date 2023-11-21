@@ -13,3 +13,17 @@
 //    }
 //    return 0;
 //}
+//
+////–°¿÷¿÷«Û∫Õ
+//int main()
+//{
+//    int n = 0;
+//    scanf("%d", &n);
+//    long long sum = 0;
+//    for (int i = 1; i <= n; i++)
+//    {
+//        sum += i;
+//    }
+//    printf("%lld", sum);
+//    return 0;
+//}
