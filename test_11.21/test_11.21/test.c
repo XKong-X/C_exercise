@@ -102,3 +102,31 @@
 //	printf("%d\n", sum);
 //	return 0;
 //}
+//
+////1-100000的水仙花数
+//#include <math.h>
+//int main()
+//{
+//	for (int i = 0; i <= 100000; i++)
+//	{
+//		int count = 1;
+//		int tmp = i;
+//		int sum = 0;
+//		while (tmp / 10)
+//		{
+//			count++;
+//			tmp /= 10;
+//		}
+//		tmp = i;
+//		while (tmp)
+//		{
+//			sum += pow(tmp % 10,count);
+//			tmp /= 10;
+//		}
+//		if (sum == i)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
