@@ -52,3 +52,18 @@
 //    printf("%d\n", count);
 //    return 0;
 //}
+//
+////使用指针打印数组
+//int main()
+//{
+//	int arr[] = { 0,1,2,3,4 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int* p = arr;
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%d ", *(p + i));
+//	}
+//	return 0;
+//}
+//
+//
