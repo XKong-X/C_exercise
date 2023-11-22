@@ -28,4 +28,22 @@
 //    return 0;
 //}
 //
-//
+////小乐乐算多少人被请家长
+//int main()
+//{
+//    int n = 0;
+//    scanf("%d", &n);
+//    int s1 = 0;
+//    int s2 = 0;
+//    int s3 = 0;
+//    int count = 0;
+//    while (~scanf("%d %d %d", &s1, &s2, &s3))
+//    {
+//        if ((s1 + s2 + s3) / 3 < 60)
+//        {
+//            count++;
+//        }
+//    }
+//    printf("%d", count);
+//    return 0;
+//}
