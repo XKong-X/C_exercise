@@ -47,3 +47,36 @@
 //    printf("%d", count);
 //    return 0;
 //}
+//
+////公务员面试
+//int main()
+//{
+//    int s = 0;
+//    int sum = 0;
+//    int max = 0;
+//    int min = 100;
+//    int count = 0;
+//    while (~scanf("%d", &s))
+//    {
+//        sum += s;
+//        if (max < s)
+//        {
+//            max = s;
+//        }
+//        if (min > s)
+//        {
+//            min = s;
+//        }
+//        count++;
+//        if (count == 7)
+//        {
+//            printf("%.2lf\n", (sum - max - min) / 5.0);
+//            //重置数据
+//            sum = 0;
+//            max = 0;
+//            min = 100;
+//            count = 0;
+//        }
+//    }
+//    return 0;
+//}
