@@ -42,3 +42,23 @@
 //	}
 //	return 0;
 //}
+//
+////ºÈÆûË®
+//int main()
+//{
+//	int money = 0;
+//	scanf("%d", &money);
+//	//int empty = money/1;
+//	//int total = money/1;
+//	//while (empty>=2)
+//	//{
+//	//	total += empty / 2;
+//	//	empty = empty / 2 + empty % 2;
+//	//}
+//	//printf("%d", total);
+//	if (money > 0)
+//		printf("%d", 2 * money - 1);
+//	else
+//		printf("%d", 0);
+//	return 0;
+//}
