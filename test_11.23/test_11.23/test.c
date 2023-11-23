@@ -62,3 +62,24 @@
 //		printf("%d", 0);
 //	return 0;
 //}
+//
+////小乐乐与进制转换
+//int main()
+//{
+//    int n = 0;
+//    scanf("%d", &n);
+//    int i = 0;
+//    int arr[12] = { 0 };
+//    int count = 0;
+//    while (n)
+//    {
+//        arr[i++] = n % 6;
+//        n /= 6;
+//        count++;
+//    }
+//    for (i = count; i > 0; i--)
+//    {
+//        printf("%d", arr[i - 1]);
+//    }
+//    return 0;
+//}
