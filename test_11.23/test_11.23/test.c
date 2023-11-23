@@ -112,3 +112,19 @@
 //        printf("NO\n");
 //    return 0;
 //}
+//
+////Ïß¶ÎÍ¼°¸
+//int main()
+//{
+//    int n = 0;
+//    while (~scanf("%d", &n))
+//    {
+//        int i = 0;
+//        for (i = 0; i < n; i++)
+//        {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
