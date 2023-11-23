@@ -154,3 +154,49 @@
 //    }
 //    return 0;
 //}
+//
+//正方形图案
+// //方法1（不推荐）
+// int main()
+// {
+//     int n = 0;
+//     while (~scanf("%d", &n))
+//     {
+//         int i = 0;
+//         int count = 0;
+//         for (i = 1; i <= n; i++)
+//         {
+//             for (i = 1; i <= n; i++)
+//             {
+//                 printf("* ");
+//             }
+//             count++;
+//             printf("\n");
+//             if (i == n+1)
+//                 i = 1;
+//             if (count == n)
+//                 break;
+//         }
+//     }
+//     return 0;
+// }
+////方法2（推荐）
+//int main()
+//{
+//    int n = 0;
+//    while (~scanf("%d", &n))
+//    {
+//        int i = 0;
+//        int count = 0;
+//        for (i = 1; i <= n; i++)
+//        {
+//            int j = 0;
+//            for (j = 1; j <= n; j++)
+//            {
+//                printf("* ");
+//            }
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
