@@ -100,3 +100,15 @@
 //    }
 //    return 0;
 //}
+//
+////被5整除问题
+//int main()
+//{
+//    int m = 0;
+//    scanf("%d", &m);
+//    if (m % 5 == 0)
+//        printf("YES\n");
+//    else
+//        printf("NO\n");
+//    return 0;
+//}
