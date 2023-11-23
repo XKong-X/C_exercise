@@ -237,4 +237,26 @@
 //    return 0;
 //}
 //
+////带空格直角三角形图案
+//int main()
+//{
+//    int n = 0;
+//    while (~scanf("%d", &n))
+//    {
+//        for (int i = 1; i <= n; i++)
+//        {
+//            //打印空格
+//            for (int j = 2 * (n - i); j > 0; j--)
+//            {
+//                printf(" ");
+//            }
+//            for (int j = 1; j <= i; j++)
+//            {
+//                printf("* ");
+//            }
+//            printf("\n");
+//        }
 //
+//    }
+//    return 0;
+//}
