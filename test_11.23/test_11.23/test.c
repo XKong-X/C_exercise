@@ -200,3 +200,21 @@
 //    }
 //    return 0;
 //}
+//
+////直角三角形图案
+//int main()
+//{
+//    int n = 0;
+//    while (~scanf("%d", &n))
+//    {
+//        for (int i = 1; i <= n; i++)
+//        {
+//            for (int j = 1; j <= i; j++)
+//            {
+//                printf("* ");
+//            }
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
