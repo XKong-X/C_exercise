@@ -218,3 +218,23 @@
 //    }
 //    return 0;
 //}
+//
+////翻转直角三角形图案
+//int main()
+//{
+//    int n = 0;
+//    while (~scanf("%d", &n))
+//    {
+//        for (int i = 1; i <= n; i++)
+//        {
+//            for (int j = n - i + 1; j > 0; j--)
+//            {
+//                printf("* ");
+//            }
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
+//
+//
