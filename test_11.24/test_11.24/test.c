@@ -79,3 +79,35 @@
 //    printf("%d", max - min);
 //    return 0;
 //}
+//
+////争夺前五名
+//int main()
+//{
+//    int n = 0;
+//    scanf("%d", &n);
+//    int arr[50];
+//    //读数据
+//    for (int i = 0; i < n; i++)
+//    {
+//        scanf("%d", &arr[i]);
+//    }
+//    //冒泡排序（倒序）
+//    for (int i = 0; i < n; i++)
+//    {
+//        for (int j = i + 1; j < n; j++)
+//        {
+//            if (arr[i] < arr[j])
+//            {
+//                int tmp = arr[i];
+//                arr[i] = arr[j];
+//                arr[j] = tmp;
+//            }
+//        }
+//    }
+//    //打印
+//    for (int i = 0; i < 5; i++)
+//    {
+//        printf("%d ", arr[i]);
+//    }
+//    return 0;
+//}
