@@ -60,4 +60,22 @@
 //    return 0;
 //}
 //
-//
+////最高分与最低分之差
+//int main()
+//{
+//    int n = 0;
+//    scanf("%d", &n);
+//    int min = 100;
+//    int max = 0;
+//    int arr[100];
+//    for (int i = 0; i < n; i++)
+//    {
+//        scanf("%d", &arr[i]);
+//        if (max < arr[i])
+//            max = arr[i];
+//        if (min > arr[i])
+//            min = arr[i];
+//    }
+//    printf("%d", max - min);
+//    return 0;
+//}
