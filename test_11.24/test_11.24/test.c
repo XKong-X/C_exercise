@@ -43,3 +43,21 @@
 //    }
 //    return 0;
 //}
+//
+////N个数之和
+//int main()
+//{
+//    int n = 0;
+//    int sum = 0;
+//    scanf("%d", &n);
+//    for (int i = 0; i < n; i++)
+//    {
+//        int tmp = 0;
+//        scanf("%d", &tmp);
+//        sum += tmp;
+//    }
+//    printf("%d", sum);
+//    return 0;
+//}
+//
+//
