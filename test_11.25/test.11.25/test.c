@@ -79,3 +79,29 @@
 //    }
 //    return 0;
 //}
+//
+////”––Ú–Ú¡–≈–∂œ
+//int main()
+//{
+//    int n = 0;
+//    scanf("%d", &n);
+//    int arr[50];
+//    for (int i = 0; i < n; i++)
+//    {
+//        scanf("%d", &arr[i]);
+//    }
+//    int count1 = 0;
+//    int count2 = 0;
+//    for (int i = 0; i < n - 1; i++)
+//    {
+//        if (arr[i] <= arr[i + 1])
+//            count1++;
+//        else if (arr[i] >= arr[i + 1])
+//            count2++;
+//    }
+//    if (count1 == n - 1 || count2 == n - 1)
+//        printf("sorted\n");
+//    else
+//        printf("unsorted\n");
+//    return 0;
+//}
