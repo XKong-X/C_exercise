@@ -193,3 +193,32 @@
 //	printf("%d", sum);
 //	return 0;
 //}
+//
+//[NOIP2018]标题统计
+// //方法一
+// int main() 
+// {
+//     char ch='0';
+//     int count=0;
+//     while((ch=getchar())!=EOF)
+//     {
+//         if(ch>='A'&&ch<='Z'||ch>='a'&&ch<='z'||ch>='0'&&ch<='9')
+//         count++;
+//     }
+//     printf("%d",count);
+//     return 0;
+// }
+////方法二（用库函数解决）
+//#include <ctype.h>
+//int main()
+//{
+//    char ch = '0';
+//    int count = 0;
+//    while ((ch = getchar()) != EOF)
+//    {
+//        if (isalpha(ch) || isdigit(ch))
+//            count++;
+//    }
+//    printf("%d", count);
+//    return 0;
+//}
