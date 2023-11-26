@@ -223,19 +223,57 @@
 //    return 0;
 //}
 //
-//登录验证
-#include <string.h>
-int main()
-{
-    char cloud_account_pass[] = "admin";
-    char account[20];
-    char pass[20];
-    while (~scanf("%s %s", account, pass))
-    {
-        if (0 == strcmp(cloud_account_pass, account) && 0 == strcmp(cloud_account_pass, pass))
-            printf("Login Success!\n");
-        else
-            printf("Login Fail!\n");
-    }
-    return 0;
-}
+////登录验证
+//#include <string.h>
+//int main()
+//{
+//    char cloud_account_pass[] = "admin";
+//    char account[20];
+//    char pass[20];
+//    while (~scanf("%s %s", account, pass))
+//    {
+//        if (0 == strcmp(cloud_account_pass, account) && 0 == strcmp(cloud_account_pass, pass))
+//            printf("Login Success!\n");
+//        else
+//            printf("Login Fail!\n");
+//    }
+//    return 0;
+//}
+//
+////[NOIP2008]笨小猴（有空重写）
+//#include <string.h>
+//int main()
+//{
+//    int max = 0;
+//    int min = 100;
+//    int flag = 1;
+//    char alpha[100];
+//    scanf("%s", alpha);
+//    for (unsigned int i = 0; i < strlen(alpha); i++)
+//    {
+//        int count = 0;
+//        for (unsigned int j = 0; j < strlen(alpha); j++)
+//        {
+//            if (alpha[i] == alpha[j])
+//                count++;
+//        }
+//        if (max < count)
+//            max = count;
+//        if (min > count)
+//            min = count;
+//    }
+//    for (int i = 2; i < (max - min); i++)
+//    {
+//        if ((max - min) % i == 0)
+//            flag = 0;
+//    }
+//    if (flag == 1 && (max - min) != 1 && (max - min) != 0)
+//    {
+//        printf("Lucky Word\n%d", max - min);
+//    }
+//    else
+//    {
+//        printf("No Answer\n%d", 0);
+//    }
+//    return 0;
+//}
