@@ -128,3 +128,68 @@
 //    printf("%d", sum);
 //    return 0;
 //}
+//
+////分数求和
+//int main()
+//{
+//	int n = 0;
+//	int flag = 1;
+//	double sum = 0;
+//	int i = 0;
+//	for (i = 1; i <= 100; i++)
+//	{
+//		sum += (1.0 / i)*flag;
+//		flag = -flag;
+//	}
+//	printf("%lf", sum);
+//	return 0;
+//}
+//
+////1到100的所有整数中9得个数
+//int main()
+//{
+//	int count = 0;
+//	for (int i = 1; i <= 100; i++)
+//	{
+//		int tmp = i;
+//		while (tmp)
+//		{
+//			if (tmp % 10 == 9)
+//				count++;
+//			tmp /= 10;
+//		}
+//	}
+//	printf("%d", count);
+//	return 0;
+//}
+//
+////打印闰年
+//int main()
+//{
+//	for (int i = 1000; i <= 2000; i++)
+//	{
+//		if (i % 400 == 0 || i % 4 == 0 && i % 100 != 0)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
+//
+////求10个整数中的最大值
+////输入用例：15 68 95 34 21 62 76 92 45 22
+//int main()
+//{
+//	int n = 0;
+//	int sum = 0;
+//	for (int i = 0; i < 10; i++)
+//	{
+//		scanf("%d", &n);
+//		if (sum < n)
+//		{
+//			sum = n;
+//		}
+//	}
+//	printf("%d", sum);
+//	return 0;
+//}
