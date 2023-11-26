@@ -66,45 +66,65 @@
 //    return 0;
 //}
 //
-//矩阵相等判定
-int main()
-{
-    int n, m;
-    scanf("%d %d", &n, &m);
-    int arr1[10][10], arr2[10][10];
-    int i, j;
-    for (i = 0; i < n; i++)
-    {
-        for (j = 0; j < m; j++)
-        {
-            scanf("%d", &arr1[i][j]);
-        }
-    }
-    for (i = 0; i < n; i++)
-    {
-        for (j = 0; j < m; j++)
-        {
-            scanf("%d", &arr2[i][j]);
-        }
-    }
-    int count = 0;
-    for (i = 0; i < n; i++)
-    {
-        for (j = 0; j < m; j++)
-        {
-            if (arr1[i][j] == arr2[i][j])
-            {
-                count++;
-            }
-        }
-    }
-    if (count == n * m)
-    {
-        printf("Yes\n");
-    }
-    else
-    {
-        printf("No\n");
-    }
-    return 0;
-}
+////矩阵相等判定
+//int main()
+//{
+//    int n, m;
+//    scanf("%d %d", &n, &m);
+//    int arr1[10][10], arr2[10][10];
+//    int i, j;
+//    for (i = 0; i < n; i++)
+//    {
+//        for (j = 0; j < m; j++)
+//        {
+//            scanf("%d", &arr1[i][j]);
+//        }
+//    }
+//    for (i = 0; i < n; i++)
+//    {
+//        for (j = 0; j < m; j++)
+//        {
+//            scanf("%d", &arr2[i][j]);
+//        }
+//    }
+//    int count = 0;
+//    for (i = 0; i < n; i++)
+//    {
+//        for (j = 0; j < m; j++)
+//        {
+//            if (arr1[i][j] == arr2[i][j])
+//            {
+//                count++;
+//            }
+//        }
+//    }
+//    if (count == n * m)
+//    {
+//        printf("Yes\n");
+//    }
+//    else
+//    {
+//        printf("No\n");
+//    }
+//    return 0;
+//}
+//
+////矩阵计算
+//int main()
+//{
+//    int n, m;
+//    scanf("%d %d", &n, &m);
+//    int arr[10][10];
+//    int sum = 0;
+//    for (int i = 0; i < n; i++)
+//    {
+//        for (int j = 0; j < m; j++)
+//        {
+//            scanf("%d", &arr[i][j]);
+//            if (arr[i][j] > 0)
+//                sum += arr[i][j];
+//        }
+//    }
+//    printf("%d", sum);
+//    return 0;
+//}
