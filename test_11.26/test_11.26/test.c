@@ -222,3 +222,20 @@
 //    printf("%d", count);
 //    return 0;
 //}
+//
+//µÇÂ¼ÑéÖ¤
+#include <string.h>
+int main()
+{
+    char cloud_account_pass[] = "admin";
+    char account[20];
+    char pass[20];
+    while (~scanf("%s %s", account, pass))
+    {
+        if (0 == strcmp(cloud_account_pass, account) && 0 == strcmp(cloud_account_pass, pass))
+            printf("Login Success!\n");
+        else
+            printf("Login Fail!\n");
+    }
+    return 0;
+}
