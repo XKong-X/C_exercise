@@ -38,3 +38,32 @@
 //    printf("%d", arr[x][y]);
 //    return 0;
 //}
+//
+////最高身高
+//int main()
+//{
+//    int n, m;
+//    scanf("%d %d", &n, &m);
+//    int arr[10][10];
+//    int tmp1 = 0;
+//    int tmp2 = 0;
+//    for (int i = 0; i < n; i++)
+//    {
+//        for (int j = 0; j < m; j++)
+//        {
+//            scanf("%d", &arr[i][j]);
+//        }
+//        for (int j = 0; j < m; j++)
+//        {
+//            if (arr[tmp1][tmp2] <= arr[i][j])
+//            {
+//                tmp1 = i;
+//                tmp2 = j;
+//            }
+//        }
+//    }
+//    printf("%d %d", tmp1 + 1, tmp2 + 1);
+//    return 0;
+//}
+//
+//
