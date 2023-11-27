@@ -51,3 +51,52 @@
 //    printf("%.2f", (float)max3(a + b, b, c) / (max3(a, b + c, c) + max3(a, b, b + c)));
 //    return 0;
 //}
+//
+////数位五五
+//int main()
+//{
+//    int a, b;
+//    scanf("%d %d", &a, &b);
+//    int count = 0;
+//    int sum = 0;
+//    for (int i = a; i <= b; i++)
+//    {
+//        int tmp = i;
+//        sum = 0;
+//        while (tmp)
+//        {
+//            sum += tmp % 10;
+//            tmp /= 10;
+//        }
+//        if (sum % 5 == 0)
+//        {
+//            count++;
+//        }
+//    }
+//    printf("%d", count);
+//    return 0;
+//}
+//
+////The Biggest Water Problem
+//int deal_with(int a)
+//{
+//    int tmp = 0;
+//    while (a)
+//    {
+//        tmp += a % 10;
+//        a /= 10;
+//    }
+//    return tmp;
+//}
+//int main()
+//{
+//    int n = 0;
+//    scanf("%d", &n);
+//    int sum = 0;
+//    do
+//    {
+//        n = deal_with(n);
+//    } while (n >= 10);
+//    printf("%d", n);
+//    return 0;
+//}
