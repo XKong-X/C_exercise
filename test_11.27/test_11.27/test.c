@@ -100,3 +100,25 @@
 //    printf("%d", n);
 //    return 0;
 //}
+//
+////[NOIP2010]Êý×ÖÍ³¼Æ
+//int main()
+//{
+//    int l, r;
+//    scanf("%d %d", &l, &r);
+//    int count = 0;
+//    for (int i = l; i <= r; i++)
+//    {
+//        int tmp = i;
+//        while (tmp)
+//        {
+//            if (tmp % 10 == 2)
+//            {
+//                count++;
+//            }
+//            tmp /= 10;
+//        }
+//    }
+//    printf("%d", count);
+//    return 0;
+//}
