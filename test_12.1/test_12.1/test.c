@@ -141,3 +141,16 @@
 //    }
 //    return 0;
 //}
+//
+////ÅĞ¶Ï×ÖÄ¸
+//#include <ctype.h>
+//int main()
+//{
+//    char n = getchar();
+//    getchar();//ÇåÀí»º´æÇø
+//    if (isalpha(n))
+//        printf("YES\n");
+//    else
+//        printf("NO\n");
+//    return 0;
+//}
