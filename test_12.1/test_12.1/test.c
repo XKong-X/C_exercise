@@ -89,3 +89,17 @@
 //    }
 //    return 0;
 //}
+//
+////KiKiºÍËáÄÌ
+//int main()
+//{
+//    int n, h, m, tmp;
+//    while (scanf("%d %d %d", &n, &h, &m) != EOF)
+//    {
+//        tmp = m / h;
+//        if (m % h != 0)
+//            tmp += 1;
+//        printf("%d\n", n - tmp);
+//    }
+//    return 0;
+//}
