@@ -46,4 +46,23 @@
 //	return 0;
 //}
 //
-//
+////打印100~200之间的素数
+//#include <math.h>
+//int main()
+//{
+//    for (int i = 101; i <= 200; i+=2)
+//    {
+//        int flag = 1;
+//        for (int j = 3; j <= sqrt(i); j++)
+//        {
+//            if (i % j == 0)
+//            {
+//                flag = 0;
+//                break;
+//            }
+//        }
+//        if (flag)
+//            printf("%d ", i);
+//    }
+//    return 0;
+//}
