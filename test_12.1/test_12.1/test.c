@@ -154,3 +154,36 @@
 //        printf("NO\n");
 //    return 0;
 //}
+//
+////获得月份天数
+//int main()
+//{
+//    int y, m;
+//    while (~scanf("%d %d", &y, &m))
+//    {
+//        switch (m)
+//        {
+//        case 2:
+//            if (y % 400 == 0 || (y % 4 == 0 && y % 100 != 0))
+//            {
+//                printf("%d\n", 29);
+//                break;
+//            }
+//            else
+//            {
+//                printf("%d\n", 28);
+//                break;
+//            }
+//        case 4:
+//        case 6:
+//        case 9:
+//        case 11:
+//            printf("%d\n", 30);
+//            break;
+//        default:
+//            printf("%d\n", 31);
+//            break;
+//        }
+//    }
+//    return 0;
+//}
