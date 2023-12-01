@@ -103,3 +103,12 @@
 //    }
 //    return 0;
 //}
+//
+////kikiËãÊı
+//int main()
+//{
+//    int a, b;
+//    scanf("%d %d", &a, &b);
+//    printf("%d", (a + b) % 100);
+//    return 0;
+//}
