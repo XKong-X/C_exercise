@@ -75,3 +75,17 @@
 //    printf("%d\n", 1 << n);
 //    return 0;
 //}
+//
+////计算三角形的周长和面积
+//#include <math.h>
+//int main()
+//{
+//    double a, b, c;
+//    scanf("%lf %lf %lf", &a, &b, &c);
+//    if (a + b > c && a + c > b && b + c > a)
+//    {
+//        double p = 1.0 / 2.0 * (a + b + c);
+//        printf("circumference=%.2lf area=%.2lf", a + b + c, sqrt(p * (p - a) * (p - b) * (p - c)));
+//    }
+//    return 0;
+//}
