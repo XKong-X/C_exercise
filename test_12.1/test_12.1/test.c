@@ -112,3 +112,32 @@
 //    printf("%d", (a + b) % 100);
 //    return 0;
 //}
+//
+////判断是元音还是辅音
+//int main()
+//{
+//    char aphla;
+//    while ((aphla=getchar())!=EOF)
+//    {
+//        switch (aphla)
+//        {
+//        case 'A':
+//        case 'a':
+//        case 'E':
+//        case 'e':
+//        case 'I':
+//        case 'i':
+//        case 'O':
+//        case 'o':
+//        case 'U':
+//        case 'u':
+//            printf("Vowel\n");
+//            break;
+//        default:
+//            printf("Consonant\n");
+//            break;
+//        }
+//        getchar();
+//    }
+//    return 0;
+//}
