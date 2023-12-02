@@ -91,3 +91,31 @@
 //    }
 //    return 0;
 //}
+//
+////K形图案
+//int main()
+//{
+//    int n;
+//    while (~scanf("%d", &n))
+//    {
+//        //上半部分
+//        for (int i = 1; i <= n + 1; i++)
+//        {
+//            for (int j = n - i + 2; j > 0; j--)
+//            {
+//                printf("* ");
+//            }
+//            printf("\n");
+//        }
+//        //下半部分
+//        for (int i = 1; i <= n; i++)
+//        {
+//            for (int j = 0; j < i + 1; j++)
+//            {
+//                printf("* ");
+//            }
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
