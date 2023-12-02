@@ -345,3 +345,23 @@
 //    }
 //    return 0;
 //}
+//
+////最小公倍数
+//int main()
+//{
+//	int n, m;
+//	while (~scanf("%d %d", &n, &m))
+//	{
+//		//记录乘积
+//		int p = n * m;
+//		//求最大公约数
+//		while (m)
+//		{
+//			int k = n % m;
+//			n = m;
+//			m = k;
+//		}
+//		printf("%d\n", p/n);
+//	}
+//	return 0;
+//}

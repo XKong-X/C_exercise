@@ -1,0 +1,4 @@
+﻿  test.c
+D:\Gitee\C_exericse\test_12.2\test_12.2\test.c(373,13): warning C4013: “gets”未定义；假设外部返回 int
+D:\Gitee\C_exericse\test_12.2\test_12.2\test.c(375,22): warning C4013: “strlen”未定义；假设外部返回 int
+  test_12.2.vcxproj -> D:\Gitee\C_exericse\test_12.2\Debug\test_12.2.exe
