@@ -41,3 +41,28 @@
 //    }
 //    return 0;
 //}
+//
+////【一维数组】交换数组
+//int main()
+//{
+//	int arr1[] = { 1,2,3,4,5 };
+//	int arr2[] = { 5,4,3,2,1 };
+//	int sz = sizeof(arr1) / sizeof(arr1[0]);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		int tmp = arr1[i];
+//		arr1[i] = arr2[i];
+//		arr2[i] = tmp;
+//	}
+//	//打印检查交换是否正确
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr1[i]);
+//	}
+//	printf("\n");
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr2[i]);
+//	}
+//	return 0;
+//}
