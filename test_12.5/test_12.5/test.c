@@ -46,3 +46,55 @@
 //	}
 //	return 0;
 //}
+//
+////有序序列合并（算法究极优化）
+//int main()
+//{
+//    int n, m;
+//    scanf("%d %d", &n, &m);
+//    int arr1[1000], arr2[1000];
+//    int i, j;
+//    //读arr1
+//    for (i = 0; i < n; i++)
+//    {
+//        scanf("%d", &arr1[i]);
+//    }
+//    //读arr2
+//    for (j = 0; j < m; j++)
+//    {
+//        scanf("%d", &arr2[j]);
+//    }
+//    //打印小的数，并将下标加1
+//    i = j = 0;//将i和j的值重新赋为0
+//    while (i < n && j < m)
+//    {
+//        if (arr1[i] < arr2[j])
+//        {
+//            printf("%d ", arr1[i]);
+//            i++;
+//        }
+//        else//arr1[i]>=arr2[j]
+//        {
+//            printf("%d ", arr2[j]);
+//            j++;
+//        }
+//    }
+//    //打印较长数组的剩余部分
+//    if (i < n)
+//    {
+//        while (i < n)
+//        {
+//            printf("%d ", arr1[i]);
+//            i++;
+//        }
+//    }
+//    else//j<m
+//    {
+//        while (j < m)
+//        {
+//            printf("%d ", arr2[j]);
+//            j++;
+//        }
+//    }
+//    return 0;
+//}
