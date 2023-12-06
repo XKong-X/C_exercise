@@ -53,3 +53,45 @@
 //	printf("%s", ch);
 //	return 0;
 //}
+//
+////打印菱形(新)
+//int main()
+//{
+//    int n;
+//    while (~scanf("%d", &n))
+//    {
+//        //上半部分
+//        for (int i = 1; i < n + 1; i++)
+//        {
+//            //打印空格
+//            for (int j = n - i; j > 0; j--)
+//            {
+//                printf("  ");
+//            }
+//            //打印‘*’
+//            printf("* ");
+//            for (int j = 1; j < i; j++)
+//            {
+//                printf("* * ");
+//            }
+//            printf("\n");
+//        }
+//        //下半部分
+//        for (int i = 1; i < n; i++)
+//        {
+//            //打印空格
+//            for (int j = 0; j < i; j++)
+//            {
+//                printf("  ");
+//            }
+//            //打印‘*’
+//            printf("* ");
+//            for (int j = n - i - 1; j > 0; j--)
+//            {
+//                printf("* * ");
+//            }
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
