@@ -33,3 +33,23 @@
 //	}
 //	return 0;
 //}
+//
+////×Ö·ûÄæĞò
+//#include <string.h>
+//int main()
+//{
+//	char ch[10001] = {0};
+//	gets(ch);
+//	//ÄæĞò
+//	int l = 0;
+//	int r = strlen(ch) - 1;
+//	while (l < r)
+//	{
+//		int tmp = ch[l];
+//		ch[l] = ch[r];
+//		ch[r] = tmp;
+//		l++; r--;
+//	}
+//	printf("%s", ch);
+//	return 0;
+//}
