@@ -20,3 +20,16 @@
 //    }
 //    return 0;
 //}
+//
+////使用指针打印数组内容
+//int main()
+//{
+//	int arr[] = { 0,1,2,3,4 };
+//	int* p = arr;
+//	for (int i = 0; i < 5; i++)
+//	{
+//		//printf("%d ", *(p + i));
+//		printf("%d ", p[i]);
+//	}
+//	return 0;
+//}
