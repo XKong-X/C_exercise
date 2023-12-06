@@ -95,3 +95,31 @@
 //    }
 //    return 0;
 //}
+//
+////求出0～100000之间的所有“水仙花数”并输出
+//#include <math.h>
+//int main()
+//{
+//	for (int i = 0; i <= 100000; i++)
+//	{
+//		int tmp = i;
+//		//求位数
+//		int count = 1;
+//		while (tmp/=10)
+//		{
+//			count++;
+//		}
+//		tmp = i;
+//		//求各位数字的count(位数)次方之和
+//		int sum = 0;
+//		while (tmp)
+//		{
+//			sum += pow(tmp % 10, count);
+//			tmp /= 10;
+//		}
+//		//是水仙花数则打印
+//		if (sum == i)
+//			printf("%d ", i);
+//	}
+//	return 0;
+//}
