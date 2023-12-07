@@ -1,8 +1,8 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+﻿#define _CRT_SECURE_NO_WARNINGS 1
 
 #include <stdio.h>
 
-////��n��ǰm��֮��(����n=2��m=5,��Sn=2+22+222+2222+22222=24690)
+////求n的前m项之和(例：n=2，m=5,则Sn=2+22+222+2222+22222=24690)
 //int main()
 //{
 //	int n, m;
@@ -18,7 +18,7 @@
 //	return 0;
 //}
 //
-////����ˮ��1ƿ��ˮ1Ԫ��2����ƿ���Ի�һƿ��ˮ����nԪ�����Ժȶ�����ˮ
+////喝汽水，1瓶汽水1元，2个空瓶可以换一瓶汽水，给n元，可以喝多少汽水
 //int main()
 //{
 //	int money;
@@ -41,7 +41,7 @@
 //	return 0;
 //}
 //
-////�������������ֵ�˳��ʹ�����������е�����λ�������ǰ�벿��,����ż��λ������ĺ�벿��
+////调整数组中数字的顺序使得数组中所有的奇数位于数组的前半部分,所有偶数位于数组的后半部分
 //int main()
 //{
 //	int arr[10] = { 1,2,3,4,5,9,8,7,6,8 };
@@ -50,17 +50,17 @@
 //	int r = sz - 1;
 //	while (l < r)
 //	{
-//		//������ż�����ҵ���ͣ��
+//		//从左找偶数，找到则停下
 //		while (l < r && arr[l] % 2 == 1)
 //		{
 //			l++;
 //		}
-//		//�������������ҵ���ͣ��
+//		//从右找奇数，找到则停下
 //		while (l < r && arr[r] % 2 == 0)
 //		{
 //			r--;
 //		}
-//		//����
+//		//交换
 //		if (l < r)
 //		{
 //			int tmp = arr[l];
@@ -73,5 +73,21 @@
 //	{
 //		printf("%d ", arr[i]);
 //	}
+//	return 0;
+//}
+//
+////实现一个函数来交换两个整数的内容
+//void exc_int(int arr1[], int arr2[])
+//{
+//	int tmp = arr1[0];
+//	arr1[0] = arr2[0];
+//	arr2[0]=tmp;
+//}
+//int main()
+//{
+//	int arr1[1], arr2[1];
+//	scanf("%d %d", &arr1[0], &arr2[0]);
+//	exc_int(arr1, arr2);
+//	printf("%d %d", arr1[0], arr2[0]);
 //	return 0;
 //}
