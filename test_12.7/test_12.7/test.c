@@ -91,3 +91,20 @@
 //	printf("%d %d", arr1[0], arr2[0]);
 //	return 0;
 //}
+//
+////打印一个数的每一位（递归实现）
+//void print(int n)
+//{
+//	if (n / 10)
+//	{
+//		print(n / 10);
+//	}
+//	printf("%d ", n % 10);
+//}
+//int main()
+//{
+//	int n;
+//	scanf("%d", &n);
+//	print(n);
+//	return 0;
+//}
