@@ -235,3 +235,54 @@
 //	}
 //	return 0;
 //}
+//
+////实现函数init()初始化数组为全0;实现print()打印数组的每个元素;实现reverse()函数完成数组元素的逆置
+//void init_t(int arr[], int n)//用于验证reverse函数
+//{
+//	for (int i = 0; i < n; i++)
+//	{
+//		arr[i] = i;
+//	}
+//}
+//void init(int arr[], int n)
+//{
+//	for (int i = 0; i < n; i++)
+//	{
+//		arr[i] = 0;
+//	}
+//}
+//void print(int arr[], int n)
+//{
+//	for (int i = 0; i < n; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	printf("\n");
+//}
+//void reverse(int arr[], int n)
+//{
+//	int l = 0;
+//	int r = n - 1;
+//	while (l < r)
+//	{
+//		char tmp = arr[l];
+//		arr[l] = arr[r];
+//		arr[r] = tmp;
+//		l++; r--;
+//	}
+//}
+//int main()
+//{
+//	int n;
+//	while (~scanf("%d", &n))
+//	{
+//		int arr[100];
+//		init(arr, n);
+//		print(arr, n);
+//		init_t(arr, n);//用于验证reverse函数
+//		print(arr, n);//用于验证reverse函数
+//		reverse(arr, n);
+//		print(arr, n);//用于验证reverse函数
+//	}
+//	return 0;
+//}
