@@ -182,3 +182,22 @@
 //	puts(arr);//验证
 //	return 0;
 //}
+//
+////递归方式实现打印一个整数的每一位
+//void DigitSum(int n)
+//{
+//	if (n >= 10)
+//	{
+//		DigitSum(n / 10);
+//	}
+//	printf("%d ", n % 10);
+//}
+//int main()
+//{
+//	int n;
+//	while (~scanf("%d", &n))
+//	{
+//		DigitSum(n);
+//	}
+//	return 0;
+//}
