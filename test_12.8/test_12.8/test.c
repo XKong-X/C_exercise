@@ -102,3 +102,30 @@
 //	}
 //	return 0;
 //}
+//
+////递归实现n的k次方
+//double pow_num(int n, int k)
+//{
+//	if (0 == k)
+//	{
+//		return 1;
+//	}
+//	else if (k > 0)
+//	{
+//		return n * pow_num(n, k - 1);
+//	}
+//	else//k<0
+//	{
+//		return (1.0 / n) * pow_num(n, k + 1);
+//	}
+//}
+//int main() 
+//{
+//	int n, k;
+//	while (~scanf("%d %d", &n, &k))
+//	{
+//		double ret = pow_num(n, k);
+//		printf("%lf\n", ret);
+//	}
+//	return 0;
+//}
