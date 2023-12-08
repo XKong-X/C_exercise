@@ -152,3 +152,33 @@
 //	}
 //	return 0;
 //}
+//
+////×Ö·û´®ÄæĞò£¨µİ¹éÊµÏÖ£©
+//int my_strlen(char* s)//Çó×Ö·û´®³¤¶È
+//{
+//	if (*s == '\0')
+//		return 0;
+//	else
+//		return 1 + my_strlen(++s);
+//}
+//void reverse_string(char arr[], int l, int r)//×Ö·û´®ÄæĞò
+//{
+//	if (l < r)
+//	{
+//		char tmp = arr[l];
+//		arr[l] = arr[r];
+//		arr[r] = tmp;
+//		l++; r--;
+//		reverse_string(arr, l, r);
+//	}
+//}
+//int main()
+//{
+//	char arr[] = "abcdef";
+//	int len = my_strlen(arr);
+//	int l = 0;
+//	int r = len - 1;
+//	reverse_string(arr,l,r);
+//	puts(arr);//ÑéÖ¤
+//	return 0;
+//}
