@@ -29,7 +29,7 @@
 //	return 0;
 //}
 //
-//n的阶乘
+////n的阶乘
 //////常规方法实现
 ////int Fac(int n)
 ////{
@@ -60,6 +60,45 @@
 //	else
 //	{
 //		printf("不存在！\n");
+//	}
+//	return 0;
+//}
+//
+////斐波那契数列
+////常规方法实现
+//int Fib(int n)
+//{
+//	int a, b, c;
+//	a = b = c = 1;
+//	while (n >= 3)
+//	{
+//		c = a + b;
+//		a = b; 
+//		b = c;
+//		n--;
+//	}
+//	return c;
+//}
+////递归实现
+//int Fib(int n)
+//{
+//	int ret;
+//	if (n <= 2)
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return Fib(n - 1) + Fib(n - 2);
+//	}
+//}
+//int main()
+//{
+//	int n;
+//	while (~scanf("%d", &n))
+//	{
+//		int ret = Fib(n);
+//		printf("%d\n", ret);
 //	}
 //	return 0;
 //}
