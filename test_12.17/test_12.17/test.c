@@ -33,15 +33,34 @@
 //	return 0;
 //}
 //
-//²ÂĞ×ÊÖ
+////²ÂĞ×ÊÖ
+//int main()
+//{
+//	for (int killer = 'a'; killer <= 'd'; killer++)
+//	{
+//		if ((killer != 'a') + (killer == 'c') + (killer == 'd') + (killer != 'd') == 3)
+//		{
+//			printf("%c", killer);
+//		}
+//	}
+//	return 0;
+//}
+//
+//Ñî»ÔÈı½Ç
 int main()
 {
-	for (int killer = 'a'; killer <= 'd'; killer++)
+	int arr[10][10] = { 0 };
+	for (int i = 0; i < 10; i++)
 	{
-		if ((killer != 'a') + (killer == 'c') + (killer == 'd') + (killer != 'd') == 3)
+		for (int j = 0; j <= i; j++)
 		{
-			printf("%c", killer);
+			if (j == 0 || i == j)
+				arr[i][j] = 1;
+			if (i >= 2 && j >= 1)
+				arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
+			printf("%d ", arr[i][j]);
 		}
+		printf("\n");
 	}
 	return 0;
 }
