@@ -22,19 +22,38 @@
 //	return 0;
 //}
 //
-//库函数strcpy的模拟实现
-char* my_strcpy(char* dest, const char* src)
+////库函数strcpy的模拟实现
+//char* my_strcpy(char* dest, const char* src)
+//{
+//	assert(dest && src);//断言
+//	char* ret = dest;
+//	while (*dest++ = *src++);
+//	*dest = *src;
+//	return ret;
+//}
+//int main()
+//{
+//	char str1[20];
+//	char str2[] = "hello world";
+//	printf("%s", my_strcpy(str1, str2));
+//	return 0;
+//}
+//
+//库函数strcmp的模拟实现
+int my_strcmp(const char* str1, const char* str2)//加const表示，只比较* str1和* str2，不进行修改
 {
-	assert(dest && src);//断言
-	char* ret = dest;
-	while (*dest++ = *src++);
-	*dest = *src;
-	return ret;
+	assert(str1 && str2);//断言
+	while (str1 && str2 && *str1 == *str2)//当有指针指向‘\0’或者指向的字符不相等时，停止循环
+	{
+		str1++;
+		str2++;
+	}
+	return (*str1 - *str2);//返回*str1与*str2的差
 }
 int main()
 {
-	char str1[20];
-	char str2[] = "hello world";
-	printf("%s", my_strcpy(str1, str2));
+	char str1[] = "abcdef";
+	char str2[] = "abq";
+	printf("%d", my_strcmp(str1, str2));
 	return 0;
 }
