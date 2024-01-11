@@ -45,37 +45,75 @@
 //}
 //
 //实现一个函数，可以左旋字符串中的k个字符
+//#include <string.h>
+//#include <assert.h>
+//void reverse(char* left, char* right)
+//{
+//	assert(left && right);
+//	while (left < right)
+//	{
+//		char tmp = *left;
+//		*left = *right;
+//		*right = tmp;
+//		left++;
+//		right--;
+//	}
+//}
+//void TurnLeftStr(char* str, int k)
+//{
+//	int len = strlen(str);
+//	k %= len;
+//	//左边逆序
+//	reverse(str, str + k - 1);
+//	//右边逆序
+//	reverse(str + k, str + len - 1);
+//	//整体逆序
+//	reverse(str, str + len - 1);
+//}
+//int main()
+//{
+//	char arr[] = "ABCD";
+//	int k;
+//	scanf("%d", &k);
+//	TurnLeftStr(arr, k);
+//	printf("%s\n", arr);
+//	return 0;
+//}
+//
+//
+//写一个函数，判断一个字符串是否为另外一个字符串旋转之后的字符串(是则返回1，否则返回0)
 #include <string.h>
 #include <assert.h>
 void reverse(char* left, char* right)
 {
 	assert(left && right);
-	while (left < right)
-	{
-		char tmp = *left;
-		*left = *right;
-		*right = tmp;
-		left++;
-		right--;
-	}
+	char tmp = *left;
+	*left = *right;
+	*right = tmp;
+	left++;
+	right--;
 }
-void TurnLeftStr(char* str, int k)
+int IsStrMove(char* str1, char* str2)
 {
-	int len = strlen(str);
-	k %= len;
-	//左边逆序
-	reverse(str, str + k - 1);
-	//右边逆序
-	reverse(str + k, str + len - 1);
-	//整体逆序
-	reverse(str, str + len - 1);
+	int len = strlen(str1);
+	int k = 0;
+	while (k < len)
+	{
+		reverse(str1, str1 + k);
+		k++;
+		if (strcmp(str1, str2) == 0)
+			return 1;
+	}
+	return 0;
 }
 int main()
 {
-	char arr[] = "ABCD";
-	int k;
-	scanf("%d", &k);
-	TurnLeftStr(arr, k);
-	printf("%s\n", arr);
+	char arr1[] = "ABCD";
+	char arr2[] = "dABC";
+	int ret = IsStrMove(arr1, arr2);
+	if (ret)
+		printf("是\n");
+	else
+		printf("否\n");
 	return 0;
 }
