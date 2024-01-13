@@ -21,12 +21,59 @@
 //    return 0;
 //}
 //
-//BC138 矩阵转置
+////BC138 矩阵转置
+//int main()
+//{
+//    int n, m;
+//    scanf("%d %d", &n, &m);
+//    int arr[10][10];
+//    for (int i = 0; i < n; i++)
+//    {
+//        for (int j = 0; j < m; j++)
+//        {
+//            scanf("%d", &arr[i][j]);
+//        }
+//    }
+//    for (int i = 0; i < m; i++)
+//    {
+//        for (int j = 0; j < n; j++)
+//        {
+//            printf("%d ", arr[j][i]);
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+//
+//BC139 矩阵交换
+void SwapRowCol(int arr[10][10], int n, int m, char t, int a, int b)
+{
+    if (t == 'r')//交换行(行不变，列数据依次交换)
+    {
+        for (int i = 0; i < m; i++)
+        {
+            int tmp = arr[a - 1][i];
+            arr[a - 1][i] = arr[b - 1][i];
+            arr[b - 1][i] = tmp;
+        }
+    }
+    else if (t == 'c')//交换列（列不变，行数据依次交换）
+    {
+        for (int i = 0; i < n; i++)
+        {
+            int tmp = arr[i][a - 1];
+            arr[i][a - 1] = arr[i][b - 1];
+            arr[i][b - 1] = tmp;
+        }
+    }
+}
 int main()
 {
-    int n, m;
+    int n, m, k, a, b;
+    char t;
     scanf("%d %d", &n, &m);
     int arr[10][10];
+
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
@@ -34,11 +81,19 @@ int main()
             scanf("%d", &arr[i][j]);
         }
     }
-    for (int i = 0; i < m; i++)
+
+    scanf("%d", &k);
+    while (k--)//控制交换次数
     {
-        for (int j = 0; j < n; j++)
+        scanf("\n%c %d %d", &t, &a, &b);
+        SwapRowCol(arr, n, m, t, a, b);
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
         {
-            printf("%d ", arr[j][i]);
+            printf("%d ", arr[i][j]);
         }
         printf("\n");
     }
