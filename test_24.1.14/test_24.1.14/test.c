@@ -95,18 +95,34 @@
 //    return 0;
 //}
 //
-//BC168 牛牛的西格玛
-int Sigma(int n)
+////BC168 牛牛的西格玛
+//int Sigma(int n)
+//{
+//    if (n == 0)
+//        return 0;
+//    else
+//        return Sigma(n - 1) + n;
+//}
+//int main()
+//{
+//    int n;
+//    scanf("%d", &n);
+//    printf("%d", Sigma(n));
+//    return 0;
+//}
+//
+//BC170 牛牛的digit
+int Digit(int x, int i)
 {
-    if (n == 0)
-        return 0;
+    if (i-- == 1)
+        return x % 10;
     else
-        return Sigma(n - 1) + n;
+        return x % 10 + Digit(x / 10, i) * 10;
 }
 int main()
 {
-    int n;
-    scanf("%d", &n);
-    printf("%d", Sigma(n));
+    int x, i;
+    scanf("%d %d", &x, &i);
+    printf("%d", Digit(x, i));
     return 0;
 }
