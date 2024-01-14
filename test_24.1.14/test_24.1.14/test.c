@@ -77,20 +77,36 @@
 //    return 0;
 //}
 //
-//BC166 小乐乐走台阶
-int Tts(int n)
+////BC166 小乐乐走台阶
+//int Tts(int n)
+//{
+//    if (n == 1)
+//        return 1;
+//    else if (n == 2)
+//        return 2;
+//    else
+//        return Tts(n - 1) + Tts(n - 2);
+//}
+//int main()
+//{
+//    int n;
+//    scanf("%d", &n);
+//    printf("%d", Tts(n));
+//    return 0;
+//}
+//
+//BC168 牛牛的西格玛
+int Sigma(int n)
 {
-    if (n == 1)
-        return 1;
-    else if (n == 2)
-        return 2;
+    if (n == 0)
+        return 0;
     else
-        return Tts(n - 1) + Tts(n - 2);
+        return Sigma(n - 1) + n;
 }
 int main()
 {
     int n;
     scanf("%d", &n);
-    printf("%d", Tts(n));
+    printf("%d", Sigma(n));
     return 0;
 }
