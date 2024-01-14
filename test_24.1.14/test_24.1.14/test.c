@@ -28,30 +28,51 @@
 //    return 0;
 //}
 //
-//BC163 牛牛的替换
+////BC163 牛牛的替换
+//int main()
+//{
+//    int n;
+//    char a1, a2, a3, a4;
+//    scanf("%d %c %c %c %c", &n, &a1, &a2, &a3, &a4);
+//    getchar();//处理缓存区的\n
+//    char str[100] = { 0 };
+//    for (int i = 0; i < n; i++)
+//    {
+//        str[i] = getchar();
+//        if (str[i] == a1)
+//        {
+//            if (a2 == a3)//当找到a1且a2=a3时，直接赋值为a4
+//            {
+//                str[i] = a4;
+//                break;
+//            }
+//            else
+//                str[i] = a2;
+//        }
+//        else if (str[i] == a3)
+//            str[i] = a4;
+//    }
+//    printf("%s", str);
+//    return 0;
+//}
+//
+//BC164 牛牛的四叶玫瑰数
+#include <math.h>
 int main()
 {
-    int n;
-    char a1, a2, a3, a4;
-    scanf("%d %c %c %c %c", &n, &a1, &a2, &a3, &a4);
-    getchar();//处理缓存区的\n
-    char str[100] = { 0 };
-    for (int i = 0; i < n; i++)
+    int l, r;
+    scanf("%d %d", &l, &r);
+    for (int i = l; i <= r; i++)
     {
-        str[i] = getchar();
-        if (str[i] == a1)
+        int tmp = i;
+        int sum = 0;
+        while (tmp)
         {
-            if (a2 == a3)//当找到a1且a2=a3时，直接赋值为a4
-            {
-                str[i] = a4;
-                break;
-            }
-            else
-                str[i] = a2;
+            sum += pow(tmp % 10, 4);
+            tmp /= 10;
         }
-        else if (str[i] == a3)
-            str[i] = a4;
+        if (sum == i)
+            printf("%d ", i);
     }
-    printf("%s", str);
     return 0;
 }
