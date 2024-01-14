@@ -127,22 +127,43 @@
 //    return 0;
 //}
 //
-//BC171 牛牛的Hermite多项式
-int Her(int n, int x)
+////BC171 牛牛的Hermite多项式
+//int Her(int n, int x)
+//{
+//    if (n == 0)
+//        return 1;
+//    else if (n == 1)
+//        return 2 * n;
+//    else if (n > 1)
+//        return 2 * x * Her(n - 1, x) - 2 * (n - 1) * Her(n - 2, x);
+//    else//用来过编译，不进入运算
+//        return -1;
+//}
+//int main()
+//{
+//    int n, x;
+//    scanf("%d %d", &n, &x);
+//    printf("%d", Her(n, x));
+//    return 0;
+//}
+//
+//
+//BC169 牛牛的Ackmann(没啥价值的傻波一题目(给的条件是错的))
+int ack(int m, int n)
 {
-    if (n == 0)
-        return 1;
-    else if (n == 1)
-        return 2 * n;
-    else if (n > 1)
-        return 2 * x * Her(n - 1, x) - 2 * (n - 1) * Her(n - 2, x);
-    else//用来过编译，不进入运算
+    if (m == 0)
+        return n + 1;
+    else if (m > 0 && n == 0)
+        return ack(m - 1, 1);
+    else if (m > 0 && n > 0)
+        return ack(m - 1, ack(m, n - 1));
+    else
         return -1;
 }
 int main()
 {
-    int n, x;
-    scanf("%d %d", &n, &x);
-    printf("%d", Her(n, x));
+    int n, m;
+    scanf("%d %d", &n, &m);
+    printf("%d", ack(m, n));
     return 0;
 }
