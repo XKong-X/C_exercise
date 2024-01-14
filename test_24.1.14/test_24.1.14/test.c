@@ -111,18 +111,38 @@
 //    return 0;
 //}
 //
-//BC170 牛牛的digit
-int Digit(int x, int i)
+////BC170 牛牛的digit
+//int Digit(int x, int i)
+//{
+//    if (i-- == 1)
+//        return x % 10;
+//    else
+//        return x % 10 + Digit(x / 10, i) * 10;
+//}
+//int main()
+//{
+//    int x, i;
+//    scanf("%d %d", &x, &i);
+//    printf("%d", Digit(x, i));
+//    return 0;
+//}
+//
+//BC171 牛牛的Hermite多项式
+int Her(int n, int x)
 {
-    if (i-- == 1)
-        return x % 10;
-    else
-        return x % 10 + Digit(x / 10, i) * 10;
+    if (n == 0)
+        return 1;
+    else if (n == 1)
+        return 2 * n;
+    else if (n > 1)
+        return 2 * x * Her(n - 1, x) - 2 * (n - 1) * Her(n - 2, x);
+    else//用来过编译，不进入运算
+        return -1;
 }
 int main()
 {
-    int x, i;
-    scanf("%d %d", &x, &i);
-    printf("%d", Digit(x, i));
+    int n, x;
+    scanf("%d %d", &n, &x);
+    printf("%d", Her(n, x));
     return 0;
 }
