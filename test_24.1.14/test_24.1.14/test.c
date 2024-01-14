@@ -56,23 +56,41 @@
 //    return 0;
 //}
 //
-//BC164 牛牛的四叶玫瑰数
-#include <math.h>
+////BC164 牛牛的四叶玫瑰数
+//#include <math.h>
+//int main()
+//{
+//    int l, r;
+//    scanf("%d %d", &l, &r);
+//    for (int i = l; i <= r; i++)
+//    {
+//        int tmp = i;
+//        int sum = 0;
+//        while (tmp)
+//        {
+//            sum += pow(tmp % 10, 4);
+//            tmp /= 10;
+//        }
+//        if (sum == i)
+//            printf("%d ", i);
+//    }
+//    return 0;
+//}
+//
+//BC166 小乐乐走台阶
+int Tts(int n)
+{
+    if (n == 1)
+        return 1;
+    else if (n == 2)
+        return 2;
+    else
+        return Tts(n - 1) + Tts(n - 2);
+}
 int main()
 {
-    int l, r;
-    scanf("%d %d", &l, &r);
-    for (int i = l; i <= r; i++)
-    {
-        int tmp = i;
-        int sum = 0;
-        while (tmp)
-        {
-            sum += pow(tmp % 10, 4);
-            tmp /= 10;
-        }
-        if (sum == i)
-            printf("%d ", i);
-    }
+    int n;
+    scanf("%d", &n);
+    printf("%d", Tts(n));
     return 0;
 }
