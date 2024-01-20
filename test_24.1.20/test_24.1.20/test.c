@@ -68,14 +68,28 @@
 //    return 0;
 //}
 //
-//7-8 超速判断
+////7-8 超速判断
+//int main()
+//{
+//    int v;
+//    scanf("%d", &v);
+//    if (v > 60)
+//        printf("Speed: %d - Speeding", v);
+//    else
+//        printf("Speed: %d - OK", v);
+//    return 0;
+//}
+//
+//7-9 用天平找小球
 int main()
 {
-    int v;
-    scanf("%d", &v);
-    if (v > 60)
-        printf("Speed: %d - Speeding", v);
+    int A, B, C;
+    scanf("%d %d %d", &A, &B, &C);
+    if (A == B)
+        printf("C");
+    else if (A == C)
+        printf("B");
     else
-        printf("Speed: %d - OK", v);
+        printf("A");
     return 0;
 }
