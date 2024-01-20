@@ -51,19 +51,31 @@
 //    return 0;
 //}
 //
-//7-7 12-24小时制
+////7-7 12-24小时制
+//int main()
+//{
+//    int h, m;
+//    scanf("%d:%d", &h, &m);
+//    if (h / 12 == 1)
+//    {
+//        if (h == 12)
+//            printf("%1d:%1d PM", h, m);
+//        else
+//            printf("%1d:%1d PM", h % 12, m);
+//    }
+//    else
+//        printf("%1d:%1d AM", h, m);
+//    return 0;
+//}
+//
+//7-8 超速判断
 int main()
 {
-    int h, m;
-    scanf("%d:%d", &h, &m);
-    if (h / 12 == 1)
-    {
-        if (h == 12)
-            printf("%1d:%1d PM", h, m);
-        else
-            printf("%1d:%1d PM", h % 12, m);
-    }
+    int v;
+    scanf("%d", &v);
+    if (v > 60)
+        printf("Speed: %d - Speeding", v);
     else
-        printf("%1d:%1d AM", h, m);
+        printf("Speed: %d - OK", v);
     return 0;
 }
