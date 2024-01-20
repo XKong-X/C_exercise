@@ -80,16 +80,38 @@
 //    return 0;
 //}
 //
-//7-9 用天平找小球
+////7-9 用天平找小球
+//int main()
+//{
+//    int A, B, C;
+//    scanf("%d %d %d", &A, &B, &C);
+//    if (A == B)
+//        printf("C");
+//    else if (A == C)
+//        printf("B");
+//    else
+//        printf("A");
+//    return 0;
+//}
+//
+//7-10 计算工资
 int main()
 {
-    int A, B, C;
-    scanf("%d %d %d", &A, &B, &C);
-    if (A == B)
-        printf("C");
-    else if (A == C)
-        printf("B");
+    int y, t;
+    scanf("%d %d", &y, &t);
+    if (y >= 5)
+    {
+        if (t > 40)
+            printf("%.2f", 50.0 * 40 + (t - 40) * 1.5 * 50.0);
+        else
+            printf("%.2f", 50.0 * t);
+    }
     else
-        printf("A");
+    {
+        if (t > 40)
+            printf("%.2f", 30.0 * 40 + (t - 40) * 1.5 * 30.0);
+        else
+            printf("%.2f", 30.0 * t);
+    }
     return 0;
 }
