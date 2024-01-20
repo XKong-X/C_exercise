@@ -40,13 +40,30 @@
 //    return 0;
 //}
 //
-//7-6 混合类型数据格式化输入
+////7-6 混合类型数据格式化输入
+//int main()
+//{
+//    float f1, f2;
+//    int n;
+//    char c;
+//    scanf("%f %d %c %f", &f1, &n, &c, &f2);
+//    printf("%c %d %.2f %.2f", c, n, f1, f2);
+//    return 0;
+//}
+//
+//7-7 12-24小时制
 int main()
 {
-    float f1, f2;
-    int n;
-    char c;
-    scanf("%f %d %c %f", &f1, &n, &c, &f2);
-    printf("%c %d %.2f %.2f", c, n, f1, f2);
+    int h, m;
+    scanf("%d:%d", &h, &m);
+    if (h / 12 == 1)
+    {
+        if (h == 12)
+            printf("%1d:%1d PM", h, m);
+        else
+            printf("%1d:%1d PM", h % 12, m);
+    }
+    else
+        printf("%1d:%1d AM", h, m);
     return 0;
 }
