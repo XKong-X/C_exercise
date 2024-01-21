@@ -92,29 +92,49 @@
 //    return 0;
 //}
 //
-//7-16 求符合给定条件的整数集
+////7-16 求符合给定条件的整数集
+//int main()
+//{
+//    int a;
+//    scanf("%d", &a);
+//    int count = 0;
+//    for (int k = a; k < a + 4; k++)
+//    {
+//        for (int n = a; n < a + 4; n++)
+//        {
+//            for (int m = a; m < a + 4; m++)
+//            {
+//                if (k != n && k != m && n != m)
+//                {
+//                    printf("%d%d%d", k, n, m);
+//                    count++;
+//                    if (count % 6)
+//                        printf(" ");
+//                    else
+//                        printf("\n");
+//                }
+//            }
+//        }
+//    }
+//    return 0;
+//}
+//
+//7-17 爬动的蠕虫
 int main()
 {
-    int a;
-    scanf("%d", &a);
-    int count = 0;
-    for (int k = a; k < a + 4; k++)
+    int n, u, d, h = 0, t = 0;
+    scanf("%d %d %d", &n, &u, &d);
+    while (1)
     {
-        for (int n = a; n < a + 4; n++)
-        {
-            for (int m = a; m < a + 4; m++)
-            {
-                if (k != n && k != m && n != m)
-                {
-                    printf("%d%d%d", k, n, m);
-                    count++;
-                    if (count % 6)
-                        printf(" ");
-                    else
-                        printf("\n");
-                }
-            }
-        }
+        h += u;
+        t++;
+        if (h >= n)
+            break;
+        h -= d;
+        t++;
     }
+    if (t < 1)
+        t = 1;
+    printf("%d", t);
     return 0;
 }
