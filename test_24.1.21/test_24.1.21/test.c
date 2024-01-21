@@ -57,21 +57,37 @@
 //    return 0;
 //}
 //
-//7-14 求整数段和
+////7-14 求整数段和
+//int main()
+//{
+//    int a, b;
+//    scanf("%d %d", &a, &b);
+//    int sum = 0;
+//    int count = 0;
+//    for (int i = a; i <= b; i++)
+//    {
+//        printf("%5d", i);
+//        sum += i;
+//        count++;
+//        if ((count != 0 && count % 5 == 0) || i == b)
+//            printf("\n");
+//    }
+//    printf("Sum = %d", sum);
+//    return 0;
+//}
+//
+//7-15 计算圆周率
 int main()
 {
-    int a, b;
-    scanf("%d %d", &a, &b);
-    int sum = 0;
-    int count = 0;
-    for (int i = a; i <= b; i++)
+    double lim, pi = 0, num = 1.0;
+    scanf("%lf", &lim);
+    int n = 1;
+    while (num >= lim)
     {
-        printf("%5d", i);
-        sum += i;
-        count++;
-        if ((count != 0 && count % 5 == 0) || i == b)
-            printf("\n");
+        num = (n * num) / (2 * n + 1);
+        n++;
+        pi += num;
     }
-    printf("Sum = %d", sum);
+    printf("%lf", 2.0 * (pi + 1.0));
     return 0;
 }
