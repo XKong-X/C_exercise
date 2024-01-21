@@ -35,24 +35,43 @@
 //    return 0;
 //}
 //
-//7-13 日K蜡烛图
+////7-13 日K蜡烛图
+//int main()
+//{
+//    double O, H, L, C;
+//    scanf("%lf %lf %lf %lf", &O, &H, &L, &C);
+//    //蜡烛类型
+//    if (C < O)
+//        printf("%s", "BW-Solid");
+//    else if (C > O)
+//        printf("%s", "R-Hollow");
+//    else
+//        printf("%s", "R-Cross");
+//    //影线
+//    if (L<O && L<C && H>O && H>C)
+//        printf("%s", " with Lower Shadow and Upper Shadow");
+//    else if (L < O && L < C)
+//        printf("%s", " with Lower Shadow");
+//    else if (H > O && H > C)
+//        printf("%s", " with Upper Shadow");
+//    return 0;
+//}
+//
+//7-14 求整数段和
 int main()
 {
-    double O, H, L, C;
-    scanf("%lf %lf %lf %lf", &O, &H, &L, &C);
-    //蜡烛类型
-    if (C < O)
-        printf("%s", "BW-Solid");
-    else if (C > O)
-        printf("%s", "R-Hollow");
-    else
-        printf("%s", "R-Cross");
-    //影线
-    if (L<O && L<C && H>O && H>C)
-        printf("%s", " with Lower Shadow and Upper Shadow");
-    else if (L < O && L < C)
-        printf("%s", " with Lower Shadow");
-    else if (H > O && H > C)
-        printf("%s", " with Upper Shadow");
+    int a, b;
+    scanf("%d %d", &a, &b);
+    int sum = 0;
+    int count = 0;
+    for (int i = a; i <= b; i++)
+    {
+        printf("%5d", i);
+        sum += i;
+        count++;
+        if ((count != 0 && count % 5 == 0) || i == b)
+            printf("\n");
+    }
+    printf("Sum = %d", sum);
     return 0;
 }
