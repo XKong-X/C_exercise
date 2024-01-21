@@ -163,22 +163,38 @@
 //    return 0;
 //}
 //
-//7-19 支票面额
+////7-19 支票面额
+//int main()
+//{
+//    int n, y, f;
+//    scanf("%d", &n);
+//    for (f = 0; f < 100; f++)
+//    {
+//        for (y = 0; y < 100; y++)
+//        {
+//            if (200 * y + 2 * f + n == 100 * f + y)
+//            {
+//                printf("%d.%d", y, f);
+//                return 0;
+//            }
+//        }
+//    }
+//    printf("No Solution");
+//    return 0;
+//}
+//
+//7-20 打印九九口诀表
 int main()
 {
-    int n, y, f;
+    int n;
     scanf("%d", &n);
-    for (f = 0; f < 100; f++)
+    for (int x = 1; x <= n; x++)
     {
-        for (y = 0; y < 100; y++)
+        for (int y = 1; y <= x; y++)
         {
-            if (200 * y + 2 * f + n == 100 * f + y)
-            {
-                printf("%d.%d", y, f);
-                return 0;
-            }
+            printf("%d*%d=%-4d", y, x, x * y);
         }
+        printf("\n");
     }
-    printf("No Solution");
     return 0;
 }
