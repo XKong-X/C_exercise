@@ -139,26 +139,46 @@
 //    return 0;
 //}
 //
-//7-18 二分法求多项式单根
-double a3, a2, a1, a0;
-double fun(double x)
-{
-    return (a3 * x * x * x + a2 * x * x + a1 * x + a0);
-}
+////7-18 二分法求多项式单根
+//double a3, a2, a1, a0;
+//double fun(double x)
+//{
+//    return (a3 * x * x * x + a2 * x * x + a1 * x + a0);
+//}
+//int main()
+//{
+//    double l, r, mid;
+//    scanf("%lf %lf %lf %lf\n%lf %lf", &a3, &a2, &a1, &a0, &l, &r);
+//    while (r - l >= 0.001)
+//    {
+//        mid = (l + r) / 2.0;
+//        if (fun(mid) == 0)
+//            break;
+//        else if ((fun(mid) > 0 && fun(r) > 0) || (fun(mid) < 0 && fun(r) < 0))
+//            r = mid;
+//        else if ((fun(mid) > 0 && fun(l) > 0) || (fun(mid) < 0 && fun(l) < 0))
+//            l = mid;
+//    }
+//    printf("%.2lf", mid);
+//    return 0;
+//}
+//
+//7-19 支票面额
 int main()
 {
-    double l, r, mid;
-    scanf("%lf %lf %lf %lf\n%lf %lf", &a3, &a2, &a1, &a0, &l, &r);
-    while (r - l >= 0.001)
+    int n, y, f;
+    scanf("%d", &n);
+    for (f = 0; f < 100; f++)
     {
-        mid = (l + r) / 2.0;
-        if (fun(mid) == 0)
-            break;
-        else if ((fun(mid) > 0 && fun(r) > 0) || (fun(mid) < 0 && fun(r) < 0))
-            r = mid;
-        else if ((fun(mid) > 0 && fun(l) > 0) || (fun(mid) < 0 && fun(l) < 0))
-            l = mid;
+        for (y = 0; y < 100; y++)
+        {
+            if (200 * y + 2 * f + n == 100 * f + y)
+            {
+                printf("%d.%d", y, f);
+                return 0;
+            }
+        }
     }
-    printf("%.2lf", mid);
+    printf("No Solution");
     return 0;
 }
