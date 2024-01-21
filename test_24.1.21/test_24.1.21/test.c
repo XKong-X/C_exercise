@@ -76,18 +76,45 @@
 //    return 0;
 //}
 //
-//7-15 计算圆周率
+////7-15 计算圆周率
+//int main()
+//{
+//    double lim, pi = 0, num = 1.0;
+//    scanf("%lf", &lim);
+//    int n = 1;
+//    while (num >= lim)
+//    {
+//        num = (n * num) / (2 * n + 1);
+//        n++;
+//        pi += num;
+//    }
+//    printf("%lf", 2.0 * (pi + 1.0));
+//    return 0;
+//}
+//
+//7-16 求符合给定条件的整数集
 int main()
 {
-    double lim, pi = 0, num = 1.0;
-    scanf("%lf", &lim);
-    int n = 1;
-    while (num >= lim)
+    int a;
+    scanf("%d", &a);
+    int count = 0;
+    for (int k = a; k < a + 4; k++)
     {
-        num = (n * num) / (2 * n + 1);
-        n++;
-        pi += num;
+        for (int n = a; n < a + 4; n++)
+        {
+            for (int m = a; m < a + 4; m++)
+            {
+                if (k != n && k != m && n != m)
+                {
+                    printf("%d%d%d", k, n, m);
+                    count++;
+                    if (count % 6)
+                        printf(" ");
+                    else
+                        printf("\n");
+                }
+            }
+        }
     }
-    printf("%lf", 2.0 * (pi + 1.0));
     return 0;
 }
