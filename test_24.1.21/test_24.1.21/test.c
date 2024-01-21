@@ -119,22 +119,46 @@
 //    return 0;
 //}
 //
-//7-17 爬动的蠕虫
+////7-17 爬动的蠕虫
+//int main()
+//{
+//    int n, u, d, h = 0, t = 0;
+//    scanf("%d %d %d", &n, &u, &d);
+//    while (1)
+//    {
+//        h += u;
+//        t++;
+//        if (h >= n)
+//            break;
+//        h -= d;
+//        t++;
+//    }
+//    if (t < 1)
+//        t = 1;
+//    printf("%d", t);
+//    return 0;
+//}
+//
+//7-18 二分法求多项式单根
+double a3, a2, a1, a0;
+double fun(double x)
+{
+    return (a3 * x * x * x + a2 * x * x + a1 * x + a0);
+}
 int main()
 {
-    int n, u, d, h = 0, t = 0;
-    scanf("%d %d %d", &n, &u, &d);
-    while (1)
+    double l, r, mid;
+    scanf("%lf %lf %lf %lf\n%lf %lf", &a3, &a2, &a1, &a0, &l, &r);
+    while (r - l >= 0.001)
     {
-        h += u;
-        t++;
-        if (h >= n)
+        mid = (l + r) / 2.0;
+        if (fun(mid) == 0)
             break;
-        h -= d;
-        t++;
+        else if ((fun(mid) > 0 && fun(r) > 0) || (fun(mid) < 0 && fun(r) < 0))
+            r = mid;
+        else if ((fun(mid) > 0 && fun(l) > 0) || (fun(mid) < 0 && fun(l) < 0))
+            l = mid;
     }
-    if (t < 1)
-        t = 1;
-    printf("%d", t);
+    printf("%.2lf", mid);
     return 0;
 }
