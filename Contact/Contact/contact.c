@@ -12,22 +12,81 @@ void menu()
 	printf("************************************\n");
 }
 
+////静态版本
+//void InitContact(Contact* pc)
+//{
+//	assert(pc);
+//	memset(pc->data, 0, sizeof(pc->data));
+//	pc->sz = 0;
+//}
+
+//动态版本
 void InitContact(Contact* pc)
 {
 	assert(pc);
-	memset(pc->data, 0, sizeof(pc->data));
+	pc->data = (PeoInof*)malloc(DEFAULT_SZ * sizeof(PeoInof));
+	if (pc->data == NULL)
+	{
+		perror("InitContact");
+		return;
+	}
 	pc->sz = 0;
+	pc->maxsz = DEFAULT_SZ;
 }
 
+////静态版本
+//void AddContact(Contact* pc)
+//{
+//	assert(pc);
+//	//判断联系人是否已满
+//	if (pc->sz == MAX)
+//	{
+//		printf("联系人已满！\n");
+//		return;
+//	}
+//	printf("请输入名字:>");
+//	scanf("%s", pc->data[pc->sz].name);
+//	printf("请输入年龄:>");
+//	scanf("%d", &(pc->data[pc->sz].age));
+//	printf("请输入性别:>");
+//	scanf("%s", pc->data[pc->sz].sex);
+//	printf("请输入电话:>");
+//	scanf("%s", pc->data[pc->sz].tele);
+//	printf("请输入住址:>");
+//	scanf("%s", pc->data[pc->sz].addr);
+//
+//	pc->sz++;
+//	printf("添加联系人成功！\n");
+//}
+
+//动态版本
+int CheckMaxsz(Contact* pc)
+{
+	if (pc->sz == pc->maxsz)
+	{
+		PeoInof* ptr = (PeoInof*)realloc(pc->data, (pc->maxsz + INC_SZ) * sizeof(PeoInof));
+		if (ptr == NULL)
+		{
+			perror("CheckMaxsz");
+			return 0;
+		}
+		else
+		{
+			pc->data = ptr;
+			pc->maxsz += INC_SZ;
+			printf("增容成功！\n");
+			return 1;
+		}
+	}
+	return 1;
+}
 void AddContact(Contact* pc)
 {
 	assert(pc);
 	//判断联系人是否已满
-	if (pc->sz >= MAX)
-	{
-		printf("联系人已满！\n");
+	if (0 == CheckMaxsz(pc))
 		return;
-	}
+
 	printf("请输入名字:>");
 	scanf("%s", pc->data[pc->sz].name);
 	printf("请输入年龄:>");
@@ -161,4 +220,13 @@ void ModfiyContact(Contact* pc)
 
 		printf("修改联系人成功！\n");
 	}
+}
+
+//动态版本才需要
+void DestroyContact(Contact* pc)
+{
+	free(pc->data);
+	pc->data = NULL;
+	pc->sz = 0;
+	pc->maxsz = 0;
 }

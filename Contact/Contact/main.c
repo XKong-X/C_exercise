@@ -37,7 +37,8 @@ int main()
 			//按年龄大小
 
 			break;
-		case exit:
+		case Exit:
+			DestroyContact(&con);
 			printf("退出通讯录！\n");
 			break;
 		default :

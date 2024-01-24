@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
+#include <stdlib.h>
 
 #define MAX 100
 #define	MAX_NAME 20
@@ -10,9 +11,12 @@
 #define MAX_TELE 12
 #define MAX_ADDR 30
 
+#define DEFAULT_SZ 2
+#define INC_SZ 2
+
 enum OPTION
 {
-	exit,
+	Exit,//exit莫名其面报错
 	add,
 	del,
 	search,
@@ -32,10 +36,19 @@ typedef struct PeoInof
 }PeoInof;
 
 //通讯录
+////静态版本
+//typedef struct Contact
+//{
+//	PeoInof data[MAX];
+//	int sz;
+//}Contact;
+
+//动态版本
 typedef struct Contact
 {
-	PeoInof data[MAX];
-	int sz;
+	PeoInof* data;//指向数据空间
+	int sz;//记录当前联系人个数
+	int maxsz;//当前可存放的最大联系人个数
 }Contact;
 
 //打印菜单
@@ -52,3 +65,5 @@ void DelContact(Contact* pc);
 void SearchContact(Contact* pc);
 //修改联系人
 void ModfiyContact(Contact* pc);
+//释放动态申请的空间
+void DestroyContact(Contact* pc);
