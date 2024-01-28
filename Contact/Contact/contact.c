@@ -20,11 +20,37 @@ void menu()
 //	pc->sz = 0;
 //}
 
+int CheckMaxsz(Contact* pc);
+
+void LoadContact(Contact* pc)
+{
+	//打开文件
+	FILE* pf = fopen("contact.dat", "rb");
+	if (pf == NULL)
+	{
+		perror("fopen");
+		return;
+	}
+	//读数据
+	PeoInfo tmp = { 0 };
+	while (fread(&tmp, sizeof(PeoInfo), 1, pf))
+	{
+		if (0 == CheckMaxsz(pc))
+			return;
+		pc->data[pc->sz] = tmp;
+		pc->sz++;
+	}
+
+	//关闭文件
+	fclose(pf);
+	pf = NULL;
+}
+
 //动态版本
 void InitContact(Contact* pc)
 {
 	assert(pc);
-	pc->data = (PeoInof*)malloc(DEFAULT_SZ * sizeof(PeoInof));
+	pc->data = (PeoInfo*)malloc(DEFAULT_SZ * sizeof(PeoInfo));
 	if (pc->data == NULL)
 	{
 		perror("InitContact");
@@ -32,6 +58,9 @@ void InitContact(Contact* pc)
 	}
 	pc->sz = 0;
 	pc->maxsz = DEFAULT_SZ;
+
+	//加载上次保存的数据
+	LoadContact(pc);
 }
 
 ////静态版本
@@ -64,7 +93,7 @@ int CheckMaxsz(Contact* pc)
 {
 	if (pc->sz == pc->maxsz)
 	{
-		PeoInof* ptr = (PeoInof*)realloc(pc->data, (pc->maxsz + INC_SZ) * sizeof(PeoInof));
+		PeoInfo* ptr = (PeoInfo*)realloc(pc->data, (pc->maxsz + INC_SZ) * sizeof(PeoInfo));
 		if (ptr == NULL)
 		{
 			perror("CheckMaxsz");
@@ -229,4 +258,23 @@ void DestroyContact(Contact* pc)
 	pc->data = NULL;
 	pc->sz = 0;
 	pc->maxsz = 0;
+}
+
+void SaveContact(Contact* pc)
+{
+	//打开文件
+	FILE* pf = fopen("contact.dat", "wb");
+	if (pf == NULL)
+	{
+		perror("fopen");
+		return;
+	}
+	//写数据
+	for (int i = 0; i < pc->sz; i++)
+	{
+		fwrite(pc->data + i, sizeof(PeoInfo), 1, pf);
+	}
+	//关闭文件
+	fclose(pf);
+	pf = NULL;
 }

@@ -26,14 +26,14 @@ enum OPTION
 };
 
 //联系人信息
-typedef struct PeoInof
+typedef struct PeoInfo
 {
 	char name[MAX_NAME];
 	int age;
 	char sex[MAX_SEX];
 	char tele[MAX_TELE];
 	char addr[MAX_ADDR];
-}PeoInof;
+}PeoInfo;
 
 //通讯录
 ////静态版本
@@ -46,7 +46,7 @@ typedef struct PeoInof
 //动态版本
 typedef struct Contact
 {
-	PeoInof* data;//指向数据空间
+	PeoInfo* data;//指向数据空间
 	int sz;//记录当前联系人个数
 	int maxsz;//当前可存放的最大联系人个数
 }Contact;
@@ -67,3 +67,5 @@ void SearchContact(Contact* pc);
 void ModfiyContact(Contact* pc);
 //释放动态申请的空间
 void DestroyContact(Contact* pc);
+//保存通讯录
+void SaveContact(Contact* pc);

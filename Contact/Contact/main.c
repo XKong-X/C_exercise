@@ -38,6 +38,7 @@ int main()
 
 			break;
 		case Exit:
+			SaveContact(&con);
 			DestroyContact(&con);
 			printf("ÍË³öÍ¨Ñ¶Â¼£¡\n");
 			break;
