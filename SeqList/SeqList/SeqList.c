@@ -20,12 +20,12 @@ void SLDestroy(SL* ps) {
 }
 
 //打印
-void SLPrint(SL s) {
-	for (int i = 0; i < s.size; ++i) {
-		printf("%d ", s.arr[i]);
-	}
-	printf("\n");
-}
+//void SLPrint(SL s) {
+//	for (int i = 0; i < s.size; ++i) {
+//		printf("%d ", s.arr[i]);
+//	}
+//	printf("\n");
+//}
 
 //判断空间够不够，不够就扩容
 void SLCheckCapacity(SL* ps) {
@@ -103,12 +103,12 @@ void SLErase(SL* ps, int pos) {
 }
 
 //查找指定数据（返回下标）
-int SLFind(SL* ps, SLdataType x) {
-	assert(ps);
-	for (int i = 0; i < ps->size; ++i) {
-		if (ps->arr[i] == x) {
-			return i;
-		}
-	}
-	return -1;//未初始化时的默认值
-}
+//int SLFind(SL* ps, SLdataType x) {
+//	assert(ps);
+//	for (int i = 0; i < ps->size; ++i) {
+//		if (ps->arr[i] == x) {
+//			return i;
+//		}
+//	}
+//	return -1;//未初始化时的默认值
+//}
