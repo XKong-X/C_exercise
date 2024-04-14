@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
-
 //27. ÒÆ³ýÔªËØ
 int removeElement(int* nums, int numsSize, int val) {
     if (numsSize == 0) {
