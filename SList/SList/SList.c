@@ -14,6 +14,7 @@ void SLPrint(SLNode* phead) {
 		printf("%d ", ptmp->data);
 		ptmp = ptmp->next;
 	}
+	printf("\n");
 }
 
 //申请空间创建节点并返回
@@ -80,4 +81,91 @@ void SLPopBack(SLNode** pphead) {
 //头删
 void SLPopFront(SLNode** pphead) {
 	assert(pphead && *pphead);
+	SLNode* next = (*pphead)->next;
+	free(*pphead);
+	*pphead = next;
+}
+
+//查找
+SLNode* SLFind(SLNode* phead, SLDataType val) {
+	SLNode* ptmp = phead;
+	while (ptmp != NULL) {
+		if (ptmp->data == val) {
+			return ptmp;
+		}
+		ptmp = ptmp->next;
+	}
+	return NULL;
+}
+
+//pos位置之前插入数据
+void SLInsert(SLNode** pphead, SLNode* pos, SLDataType val) {
+	assert(pphead && *pphead && pos);
+	if (pos == *pphead) {
+		SLPushFront(pphead, val);
+		return;
+	}
+	//找pos的前一个节点
+	SLNode* prev = *pphead;
+	while (prev != NULL && prev->next != pos) {
+		prev = prev->next;
+	}
+	if (prev == NULL) {
+		printf("未找到pos位置\n");
+		return;
+	}
+	SLNode* node = SLBuyNode(val);
+	node->next = pos;
+	prev->next = node;
+	
+}
+
+//pos位置之后插入数据
+void SLInsertAfter(SLNode* pos, SLDataType val) {
+	assert(pos);
+	SLNode* node = SLBuyNode(val);
+	node->next = pos->next;
+	pos->next = node;
+}
+
+//删除pos节点
+void SLErase(SLNode** pphead, SLNode* pos) {
+	assert(pphead && *pphead && pos);
+	if (*pphead == pos) {
+		SLPopFront(pphead);
+		return;
+	}
+	//找pos的前一个节点
+	SLNode* prev = *pphead;
+	while (prev != NULL && prev->next != pos) {
+		prev = prev->next;
+	}
+	if (prev == NULL) {
+		printf("未找到pos位置\n");
+		return;
+	}
+	prev->next = pos->next;
+	free(pos);
+	pos = NULL;
+}
+
+//删除pos之后的节点
+void SLEraseAfter(SLNode* pos) {
+	assert(pos && pos->next);
+	SLNode* tmp = pos->next;
+	pos->next = tmp->next;
+	free(tmp);
+	tmp = NULL;
+}
+
+//销毁链表
+void SListDesTroy(SLNode** pphead) {
+	assert(pphead && *pphead);
+	SLNode* tmp = *pphead;
+	while (tmp != NULL) {
+		SLNode* next = tmp->next;
+		free(tmp);
+		tmp = next;
+	}
+	*pphead = NULL;
 }
