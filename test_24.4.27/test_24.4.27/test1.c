@@ -50,14 +50,14 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
 
     //·½·¨¶þ
     typedef struct ListNode ListNode;
-    ListNode* tmp = (ListNode*)malloc(sizeof(ListNode));
-    ListNode* head = tmp;
     if (list1 == NULL) {
         return list2;
     }
     if (list2 == NULL) {
         return list1;
     }
+    ListNode* tmp = (ListNode*)malloc(sizeof(ListNode));
+    ListNode* head = tmp;
     while (list1 != NULL && list2 != NULL) {
         if (list1->val <= list2->val) {
             tmp->next = list1;
